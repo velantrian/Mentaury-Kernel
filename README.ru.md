@@ -19,6 +19,12 @@ Mentaury-Kernel определяет **правила композиции**, а
 
 `v0.2.4 ≠ новый semantic Canon`
 
+### 🧭 Authority документации на этапе bootstrap
+
+Постоянная модель authority между Notion и GitHub всё ещё **OPEN** в [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2). Само создание репозитория и merge документации **не делают GitHub semantic Canon автоматически**.
+
+Если GitHub и исходная Notion-архитектура расходятся, нельзя молча выбрать одну поверхность: нужно остановиться и выполнить явную reconciliation по [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
+
 ## 🧭 Основная граница
 
 ```text
