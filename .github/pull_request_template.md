@@ -39,8 +39,9 @@ Does this PR change any of the following?
 - Runtime authority: `NO / YES — explain`
 - Governance authority: `NO / YES — explain`
 - Production authority: `NO / YES — explain`
+- Documentation / Canon authority: `NO / YES — explain`
 
-Any `YES` requires explicit bounded review and must not be treated as routine documentation cleanup.
+Any `YES` requires explicit bounded review and must not be treated as routine documentation cleanup. A repository/documentation change must not silently decide the Notion↔GitHub authority model tracked in Issue #2.
 
 ### 📜 Provenance
 
@@ -65,10 +66,10 @@ Does this change remove, collapse, or approximate any distinction?
 ### 🧪 Validation class
 
 - [ ] `DOCUMENT_INTERNAL_CONSISTENCY_ONLY`
-- [ ] Executable conformance evidence exists and is explicitly linked
+- [ ] Executable conformance evidence exists, is separately authorized, and is explicitly linked
 - [ ] Other — explain
 
-Do not equate documentation `PASS` with implementation evidence.
+Do not equate documentation `PASS` with implementation evidence. Executable conformance remains deferred unless a separate Owner decision authorizes it.
 
 ### 🛑 Non-authorizations
 
@@ -79,7 +80,8 @@ Unless explicitly and separately approved, this PR does **not** authorize:
 - truth or identity adjudication;
 - autonomous action;
 - production deployment;
-- a specific LLM/database/framework as semantic Canon.
+- a specific LLM/database/framework as semantic Canon;
+- a permanent Notion↔GitHub authority model.
 
 ### Summary
 
