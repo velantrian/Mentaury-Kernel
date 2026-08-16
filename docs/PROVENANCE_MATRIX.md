@@ -31,9 +31,11 @@ Every normative record must identify:
 
 Inherited rules additionally identify:
 
-- `Referenced semantic checkpoint`
+- `Exact source locator / checkpoint`
 - `Verified as of`
 - `Reconciliation trigger`
+
+`Local composition status` is the only local status field. Scope qualifiers are not encoded into the status token. Local composition rules do not need to imitate inherited-source pin metadata.
 
 ## 3. Source verification rule
 
@@ -42,6 +44,8 @@ SOURCE PAGE UPDATE ≠ AUTOMATIC COMPOSITION UPDATE
 SOURCE FRESHNESS ≠ SEMANTIC INVALIDATION
 REFERENCED SEMANTIC CONTRACT CHANGE = RECONCILIATION TRIGGER
 ```
+
+A live registry/root page may be used as a navigation or evidence surface, but an inherited pin must name the exact semantic checkpoint that was actually checked.
 
 A live status change, CI update, implementation milestone, or neighboring documentation edit does not automatically rewrite Mentaury-Kernel semantics. Reconciliation is required when the referenced semantic statement itself is superseded, materially re-scoped, loses support, or changes ownership.
 
@@ -58,7 +62,7 @@ A live status change, CI update, implementation milestone, or neighboring docume
 `Velantrim Native Kernel`
 
 **Source artifact**  
-Owning Native Kernel architecture / invariants surface, semantic checkpoint `IAR-1 reconciled problem-level minimum`.
+Owning Native Kernel architecture / invariants surface.
 
 **Source status**  
 `STRENGTHENED_FOR_BPV1_SCOPE / STILL_PROVISIONAL`
@@ -75,8 +79,8 @@ Cross-domain transfer must not silently convert Native representations or histor
 **Supersedes / Superseded by**  
 No local predecessor; not superseded as of `2026-08-15`.
 
-**Referenced semantic checkpoint**  
-`IAR-1 reconciled checkpoint · Reconciled minimum · 2026-08-11`
+**Exact source locator / checkpoint**  
+Owning Native architecture → `IAR-1 reconciled checkpoint · Reconciled minimum · 2026-08-11`.
 
 **Verified as of**  
 `2026-08-15` — rechecked after later H11 validation hardening; the owning Native architecture explicitly retained the same architecture meaning and scoped/provisional status.
@@ -112,8 +116,8 @@ Composition must not launder imported material into Mentaury autobiography or `S
 **Supersedes / Superseded by**  
 No local predecessor; not superseded as of `2026-08-15`.
 
-**Referenced semantic checkpoint**  
-`NPG-v0.1 Contract Freeze (#86) · Budget Semantics Clarified (#87)`
+**Exact source locator / checkpoint**  
+Owning Soul NPG record → `NPG-v0.1 Contract Freeze (#86)` + `Budget Semantics Clarified (#87)`. The named frozen checkpoint, not the current top of the research registry, is the semantic pin.
 
 **Verified as of**  
 `2026-08-15` — the current Soul state records bounded implementation while preserving the frozen fail-closed attribution semantics and keeping runtime unauthorized.
@@ -149,8 +153,8 @@ Provenance metadata and claim representation must survive transfer without being
 **Supersedes / Superseded by**  
 No local predecessor; not superseded as of `2026-08-15`.
 
-**Referenced semantic checkpoint**  
-`Phase 3 PCR-v0.1 · IMPLEMENTED_BOUNDED · FROZEN_DOCS`
+**Exact source locator / checkpoint**  
+Owning Soul PCR record → `Phase 3 PCR-v0.1 · IMPLEMENTED_BOUNDED · FROZEN_DOCS` and its explicit provenance/claim/evidence/belief/truth separation.
 
 **Verified as of**  
 `2026-08-15` — later Soul ATR/HDE work does not supersede this separation; Evidence Gate and source-admission ownership remain distinct.
