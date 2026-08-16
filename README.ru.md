@@ -121,17 +121,20 @@ README.md
 README.ru.md
 
 docs/
+├── AI_CONTEXT.md
 ├── CURRENT_STATUS.md
+├── AUDIT_AND_FUTURE_WORK.md
 ├── ARCHITECTURE.md
 ├── PROVENANCE_MATRIX.md
 ├── COMPOSITION_INVARIANTS.md
 ├── THREAT_MODEL.md
-├── CONFORMANCE_SCENARIOS.md
-└── AI_CONTEXT.md
+└── CONFORMANCE_SCENARIOS.md
 
 .github/
 └── pull_request_template.md
 ```
+
+Для AI/contributor navigation начинай с [`docs/AI_CONTEXT.md`](docs/AI_CONTEXT.md). Future-work ledger — только orientation surface и сам по себе не разрешает реализацию.
 
 ## 🚦 Текущая инженерная граница
 
