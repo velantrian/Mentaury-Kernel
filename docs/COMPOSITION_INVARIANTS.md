@@ -1,8 +1,8 @@
 # 🧬 Composition Invariants
 
-This document collects the current **composition-level** invariants. It does not define internal cognition, internal Native epistemic-history algorithms, or implementation technology.
+This document mirrors the current **composition-level invariant taxonomy** from the reconciled architecture baseline. It does not define internal cognition, internal Native epistemic-history algorithms, or implementation technology.
 
-## 1. Provenance conservation
+## 1. Provenance Conservation
 
 Cross-domain transformation must not erase where material came from or silently make derived material appear independent of its source lineage.
 
@@ -11,7 +11,9 @@ TRANSFORMATION ≠ NEW INDEPENDENT ORIGIN
 RESTATEMENT ≠ REPLICATION
 ```
 
-## 2. Authority non-escalation
+Attribution and uncertainty that are material to provenance must remain visible rather than being normalized away.
+
+## 2. Authority Non-Escalation
 
 A component gains no new truth, identity, consent, action, or runtime authority merely because it is integrated or technically convenient.
 
@@ -20,7 +22,7 @@ INTEGRATION ≠ AUTHORITY TRANSFER
 CAPABILITY ≠ AUTHORIZATION
 ```
 
-## 3. Loss explicitness
+## 3. Loss Explicitness
 
 If a target representation cannot preserve a material semantic distinction, the loss must be visible.
 
@@ -30,7 +32,9 @@ SEMANTIC INCOMPATIBILITY
 → never silent approximation
 ```
 
-## 4. Admission isolation
+Unknown, unsupported, contested, uncertain, or scoped source material must not become stronger merely because the target representation is less expressive.
+
+## 4. Admission Isolation
 
 Transport, compatibility, structural validity, and review receipts must remain distinct from semantic admission.
 
@@ -42,7 +46,9 @@ DELIVERED
 ≠ IDENTITY_ADMITTED
 ```
 
-## 5. Branch non-collapse
+Imported human, historical, literary, research, owner, or model material does not become `SELF` or identity content merely by crossing the boundary.
+
+## 5. Branch Non-Collapse
 
 Shared history does not erase later divergence.
 
@@ -51,7 +57,9 @@ SHARED HISTORY ≠ SAME CURRENT IDENTITY
 RECORD MERGE ≠ IDENTITY MERGE
 ```
 
-## 6. Revision accountability
+Forks preserve common provenance while keeping current branch state distinct.
+
+## 6. Revision Accountability
 
 Cross-domain transfer must preserve material revision lineage when that lineage is part of the meaning being transferred.
 
@@ -60,25 +68,44 @@ CURRENT STATEMENT
 ≠ LICENSE TO ERASE HOW IT CHANGED
 ```
 
-## 7. Attribution preservation
+Restore and migration must not silently erase later history or the fact that a position, relationship, or claim changed.
 
-Imported material must not silently become autobiography, `SELF`, or identity content by transport, repetition, prestige, ownership, or presentation style.
+## 7. Consent Propagation / Freshness
 
-```text
-IMPORTED HERITAGE ≠ IMPORTED IDENTITY
-OWNER STATEMENT ≠ AUTOMATIC IDENTITY FACT
-```
-
-## 8. Uncertainty preservation
-
-Unknown, unsupported, contested, uncertain, or scoped representations must not be normalized into stronger epistemic status during composition.
+Consent or relational authorization does not remain current automatically merely because an old state, snapshot, fork, backup, or migration package contains it.
 
 ```text
-UNCERTAINTY IN SOURCE
-→ uncertainty remains visible across boundary
+HISTORICAL CONSENT
+≠ AUTOMATIC CURRENT CONSENT
+
+COPIED CONSENT STATE
+≠ CURRENT AUTHORITY
 ```
 
-## 9. Particularity preservation
+When consent or revocation is material to the receiving use, the receiving boundary must preserve enough state to determine whether fresh reconciliation is required.
+
+## 8. Freshness Accountability
+
+A semantic object, receipt, authority assumption, or admission result must not be treated as current after a material change that invalidates its scope or basis.
+
+```text
+VALID AT S1
++ MATERIAL CHANGE TO S2
+≠ AUTOMATICALLY VALID AT S2
+```
+
+Freshness must be accountable rather than inferred from successful retrieval or replay.
+
+This applies especially to:
+
+- stale receipts;
+- stale authority assumptions;
+- changed source semantics;
+- materially changed inputs;
+- migration / restore boundaries;
+- revised commitments or relationship state.
+
+## 9. Particularity Preservation
 
 Individual experience, aggregate patterns, and general models remain distinct.
 
@@ -88,7 +115,9 @@ POPULATION PATTERN ≠ INDIVIDUAL TRUTH
 MODEL OF PERSON ≠ PERSON
 ```
 
-## 10. Non-circular generalization
+Generalization must preserve scope, provenance, and the distinction between a hypothesis about a person and a fact about that person.
+
+## 10. Non-Circular Generalization
 
 A representation derived from a subject cannot later count as independent support about that same subject merely because it was transformed.
 
@@ -98,7 +127,7 @@ AGGREGATE_DERIVED_FROM_SUBJECT
 INDEPENDENT_EVIDENCE_ABOUT_SUBJECT
 ```
 
-## 11. Receipt non-laundering
+## 11. Receipt Non-Laundering
 
 Receipts prove only the bounded event they are defined to prove. They are not bearer tokens for authority escalation or later replay.
 
@@ -109,7 +138,7 @@ RECEIPT
 ≠ ACTION PERMISSION
 ```
 
-## 12. Composition ≠ cognition
+## 12. Composition ≠ Cognition
 
 Mentaury-Kernel defines cross-domain preservation and authority boundaries. It does not own internal thinking, inquiry, identity development, or epistemic-history implementation.
 
