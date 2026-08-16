@@ -90,9 +90,9 @@ versioned semantic / continuity envelope
 🌀 Mentaury Soul
 ```
 
-### Bounded receipt plane
+### Bounded disposition plane
 
-A receiving domain may return bounded processing outcomes such as:
+A receiving domain may return bounded processing dispositions such as:
 
 ```text
 ACCEPTED_FOR_REVIEW
@@ -100,6 +100,8 @@ DEFERRED
 REJECTED
 INCOMPATIBLE
 ```
+
+These are **Port dispositions**, not semantic-loss values. In particular, `INCOMPATIBLE` indicates a bounded disposition at the Port boundary and must not replace `INDETERMINATE` in the loss taxonomy.
 
 Such a response may be recorded or reconciled upstream, but it does not grant permission to rewrite source history or promote semantic authority.
 
@@ -116,13 +118,15 @@ Receipt ≠ action authority
 
 ## 6. Receipt taxonomy
 
-At minimum, future implementations must distinguish:
+At minimum, a future implementation profile must distinguish the existing receipt classes:
 
 ```text
 DELIVERY_RECEIPT
 STRUCTURAL_VALIDATION_RECEIPT
-CONTINUITY_REVIEW_RECEIPT
+CONTINUITY_RECEIPT
 ```
+
+`IDENTITY_ADMISSION_DECISION` is a **separate governed decision**, not a receipt and not a Port transport outcome.
 
 Core law:
 
@@ -189,15 +193,17 @@ INDEPENDENT_EVIDENCE_ABOUT_SUBJECT
 
 A cross-domain transfer must not silently normalize away distinctions.
 
-Recommended architecture-level vocabulary:
+Current architecture-level loss vocabulary:
 
 ```text
 PRESERVED
 PARTIAL
 UNSUPPORTED
+INDETERMINATE
 LOSSY
-INCOMPATIBLE
 ```
+
+`DEFERRED` and `INCOMPATIBLE` remain Port dispositions from §5; they are not additional loss values.
 
 A declaration of loss only makes loss visible. It does not prove the loss is acceptable.
 
