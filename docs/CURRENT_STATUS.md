@@ -5,8 +5,10 @@
 **Document envelope:** `DRAFT v0.2.4 · DOCUMENT_RECONCILIATION_ONLY`  
 **Semantic architecture baseline:** `v0.2.3`  
 **Repository stage:** `SPECIFICATION_BOOTSTRAP_ONLY`  
-**External audit checkpoint:** Manus AI read-only audit at PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` remediated on the Draft branch.  
-**Internal re-review:** `2026-08-16 · READY_TO_MERGE · NO_REMAINING_P0_P1_P2_FOUND`; this is an owner-side/internal documentation review, **not** independent human assurance.
+**Bootstrap merge:** PR `#1` · `MERGED` · squash/main `ea3b7fd33ed4aa85806ccff2b1a061360c8530af` · signature `VERIFIED · VALID`  
+**External audit checkpoint:** Manus AI read-only audit at historical PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` were remediated before merge.  
+**Internal re-review:** `2026-08-16 · READY_TO_MERGE · NO_REMAINING_P0_P1_P2_FOUND` at pre-merge head `087501f4ca17d739ce15a0f83972097633d5444b`; owner-side/internal documentation review, **not** independent human assurance.  
+**Post-merge reconciliation:** `2026-08-16 · RECONCILED`; this status update records the already-merged bootstrap and changes no semantic law or authority.
 
 ## ✅ What exists
 
@@ -20,7 +22,8 @@
 - Particularity ↔ Generalization boundary;
 - architecture-level threat model;
 - architecture-level conformance scenarios;
-- inclusion discipline for future invariants.
+- inclusion discipline for future invariants;
+- reviewed GitHub specification-bootstrap package on `main`.
 
 ## 🚫 What does not exist
 
@@ -37,7 +40,7 @@ LLM/model dependency            NONE
 executable conformance suite    NONE
 ```
 
-Repository creation or documentation merge does not change any of these values.
+Repository creation, bootstrap merge, or this post-merge status reconciliation do not change any of these values.
 
 ## 🧭 Transitional documentation-authority boundary
 
