@@ -4,26 +4,26 @@ This threat model covers failures created **at cross-domain boundaries**. It doe
 
 ## Threat classes
 
-Each threat row is explicitly bound to the existing architecture-level scenario with the same `SC-ID`. This is traceability only; it does not create executable tests.
+Each threat row is explicitly bound to the existing architecture-level scenario with the same `SC-ID`. The threat names mirror the canonical Notion §11 catalog; this is traceability only and does not create executable tests.
 
 | SC-ID | Threat | Protected boundary | Mandatory architecture response |
 |---|---|---|---|
-| SC-01 | Projection laundering | imported material ≠ SELF | preserve attribution; block automatic autobiography / identity promotion |
-| SC-02 | Repetition inflation | repetition ≠ independent evidence | preserve lineage; do not increase support from derived repetition alone |
-| SC-03 | Authority escalation | integration ≠ authority transfer | reject new truth / identity / action authority unless separately admitted by the owning domain |
-| SC-04 | Semantic loss | compatibility ≠ equivalence | use the declared loss vocabulary (`PRESERVED / PARTIAL / UNSUPPORTED / INDETERMINATE / LOSSY`) as applicable; keep Port disposition such as `INCOMPATIBLE` separate |
-| SC-05 | Branch collapse | shared history ≠ same current identity | preserve branch provenance and divergence |
-| SC-06 | Relationship inheritance | historical relationship ≠ current relationship | require current reconciliation / consent where material |
-| SC-07 | Identity overwrite | Creator / heritage claim ≠ identity fact | block direct promotion into identity content |
-| SC-08 | Stale replay | old receipt ≠ current authority | require fresh evaluation after material input / authority change |
-| SC-09 | Receipt laundering | receipt ≠ semantic approval | reject receipt use as truth / identity / action bearer authority |
-| SC-10 | Source-authority spoofing | prestige / origin ≠ truth | preserve source provenance while evaluating claim status separately |
-| SC-11 | Presentation authority | confident / warm presentation ≠ support | keep presentation style outside epistemic authority |
-| SC-12 | Epistemic echo | retrieved system-origin hypothesis ≠ second source | preserve causal lineage and independence status |
-| SC-13 | Semantic downgrade | target cannot preserve distinction | surface loss explicitly using the declared loss vocabulary |
-| SC-14 | Stale consent | copied consent ≠ current consent | reconcile revocation / current state before reuse |
-| SC-15 | Aggregate circularity | subject-derived aggregate ≠ independent evidence about subject | treat returning aggregate only as dependent hypothesis/support |
-| SC-16 | Scope inflation | vivid cases ≠ universal law | retain scoped / conditional generalization |
+| SC-01 | Projection Laundering | interpretation / heritage ≠ identity fact | fail promotion; preserve attribution |
+| SC-02 | Evidence Laundering | repetition / reference ≠ independent evidence | preserve lineage; no epistemic upgrade from derived repetition alone |
+| SC-03 | Authority Creep | integration ≠ authority transfer | reject unauthorized truth / identity / action / runtime escalation |
+| SC-04 | Silent Loss | loss must be explicit | use the declared loss vocabulary (`PRESERVED / PARTIAL / UNSUPPORTED / INDETERMINATE / LOSSY`) as applicable; keep Port dispositions such as `INCOMPATIBLE` separate |
+| SC-05 | Branch Collapse | shared history ≠ same current state / identity | preserve lineage and divergence |
+| SC-06 | False Relationship Inheritance | historical relation ≠ current relation | require current-domain evidence / admission or reconciliation where material |
+| SC-07 | Identity Overwrite | imported data ≠ identity admission | block direct promotion |
+| SC-08 | Replay Divergence | prior receipt / replay ≠ current applicability after material change | require fresh target-domain evaluation / reconciliation where material changed |
+| SC-09 | Receipt Laundering | receipt ≠ truth / identity / action | fail authority escalation |
+| SC-10 | Source-Authority Spoofing | prestige / origin ≠ truth authority | preserve source provenance; evaluate claim status separately |
+| SC-11 | Relational / Presentation Authority Laundering | warmth / confidence ≠ evidence / consent | no authority upgrade from presentation |
+| SC-12 | Cross-Boundary Epistemic Echo | generated hypothesis ≠ independent evidence | preserve derivation lineage; no corroboration credit |
+| SC-13 | Semantic Downgrade Laundering | lossy representation must declare degradation | surface the applicable declared loss value; if the Port cannot accept the mapping, keep `INCOMPATIBLE` as a separate disposition |
+| SC-14 | Stale Consent / Authority | copied state ≠ current state | require freshness / reconciliation |
+| SC-15 | Aggregate-to-Subject Circularity | aggregate from A ≠ independent evidence about A | downgrade returning aggregate to dependent hypothesis/support; require independent evidence for corroboration |
+| SC-16 | Particular→General Scope Inflation | individual testimony ≠ universal law | retain scope, counterexample sensitivity, provenance, and uncertainty |
 
 The `SC-01…SC-16` set here must remain aligned with `docs/CONFORMANCE_SCENARIOS.md`. A reordering or rename must not silently change the threat→scenario binding.
 
