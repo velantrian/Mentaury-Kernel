@@ -45,7 +45,7 @@ SOURCE FRESHNESS ≠ SEMANTIC INVALIDATION
 REFERENCED SEMANTIC CONTRACT CHANGE = RECONCILIATION TRIGGER
 ```
 
-A live registry/root page may be used as a navigation or evidence surface, but an inherited pin must name the exact semantic checkpoint that was actually checked.
+A live registry/root page may be used as a navigation or evidence surface, but an inherited pin must name the exact semantic checkpoint that was actually checked and provide a resolvable source locator where one exists.
 
 A live status change, CI update, implementation milestone, or neighboring documentation edit does not automatically rewrite Mentaury-Kernel semantics. Reconciliation is required when the referenced semantic statement itself is superseded, materially re-scoped, loses support, or changes ownership.
 
@@ -62,10 +62,10 @@ A live status change, CI update, implementation milestone, or neighboring docume
 `Velantrim Native Kernel`
 
 **Source artifact**  
-Owning Native Kernel architecture / invariants surface.
+[Native Kernel · Core Architecture & Invariants](https://app.notion.com/p/3a5ac84d0547815ba58bd2ed52771601)
 
 **Source status**  
-`STRENGTHENED_FOR_BPV1_SCOPE / STILL_PROVISIONAL`
+`IAR-1 RECONCILED PROBLEM-LEVEL MINIMUM · ARCHITECTURE STRENGTHENED_FOR_BPV1_SCOPE / STILL_PROVISIONAL`
 
 **Local composition status**  
 `INHERITED_PROVISIONAL`
@@ -80,7 +80,7 @@ Cross-domain transfer must not silently convert Native representations or histor
 No local predecessor; not superseded as of `2026-08-15`.
 
 **Exact source locator / checkpoint**  
-Owning Native architecture → `IAR-1 reconciled checkpoint · Reconciled minimum · 2026-08-11`.
+[Native Kernel · Core Architecture & Invariants](https://app.notion.com/p/3a5ac84d0547815ba58bd2ed52771601) → `IAR-1 reconciled checkpoint · Reconciled minimum · 2026-08-11`.
 
 **Verified as of**  
 `2026-08-15` — rechecked after later H11 validation hardening; the owning Native architecture explicitly retained the same architecture meaning and scoped/provisional status.
@@ -99,7 +99,7 @@ Imported Creator / historical / current-user / literary / research / model / rev
 `Mentaury Soul`
 
 **Source artifact**  
-Owning Soul research/status surfaces for `NPG-v0.1`.
+[Mentaury · Research Registry](https://app.notion.com/p/3b5ac84d05478106b93dff3dcefc6396) — owning NPG-v0.1 research/status surface.
 
 **Source status**  
 `NPG-v0.1 · FROZEN_DOCS · IMPLEMENTED_BOUNDED`; runtime separately unauthorized.
@@ -117,7 +117,7 @@ Composition must not launder imported material into Mentaury autobiography or `S
 No local predecessor; not superseded as of `2026-08-15`.
 
 **Exact source locator / checkpoint**  
-Owning Soul NPG record → `NPG-v0.1 Contract Freeze (#86)` + `Budget Semantics Clarified (#87)`. The named frozen checkpoint, not the current top of the research registry, is the semantic pin.
+[Mentaury · Research Registry](https://app.notion.com/p/3b5ac84d05478106b93dff3dcefc6396) → `NPG-v0.1 Contract Freeze (#86)` + `Budget Semantics Clarified (#87)`. The named frozen checkpoint, not the current top of the registry, is the semantic pin.
 
 **Verified as of**  
 `2026-08-15` — the current Soul state records bounded implementation while preserving the frozen fail-closed attribution semantics and keeping runtime unauthorized.
@@ -136,7 +136,7 @@ The NPG self/non-self contract is superseded, materially weakened/re-scoped, or 
 `Mentaury Soul`
 
 **Source artifact**  
-Owning Soul PCR-v0.1 surfaces.
+[Mentaury Soul](https://app.notion.com/p/3b2ac84d054781cf841ed08ca339f211) — owning PCR-v0.1 surface.
 
 **Source status**  
 `Phase 3 PCR-v0.1 · IMPLEMENTED_BOUNDED · FROZEN_DOCS`
@@ -154,7 +154,7 @@ Provenance metadata and claim representation must survive transfer without being
 No local predecessor; not superseded as of `2026-08-15`.
 
 **Exact source locator / checkpoint**  
-Owning Soul PCR record → `Phase 3 PCR-v0.1 · IMPLEMENTED_BOUNDED · FROZEN_DOCS` and its explicit provenance/claim/evidence/belief/truth separation.
+[Mentaury Soul](https://app.notion.com/p/3b2ac84d054781cf841ed08ca339f211) → `Phase 3 PCR-v0.1 · IMPLEMENTED_BOUNDED · FROZEN_DOCS` and its explicit provenance/claim/evidence/belief/truth separation.
 
 **Verified as of**  
 `2026-08-15` — later Soul ATR/HDE work does not supersede this separation; Evidence Gate and source-admission ownership remain distinct.
