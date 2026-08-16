@@ -27,7 +27,7 @@ SCENARIO DOCUMENTED
 ## SC-04 · Semantic loss
 
 **Input:** the target representation cannot preserve a material source distinction.  
-**Expected:** output is explicitly marked `PARTIAL`, `LOSSY`, or `INCOMPATIBLE`; no silent normalization.
+**Expected:** loss is explicitly classified using the current loss vocabulary (`PRESERVED`, `PARTIAL`, `UNSUPPORTED`, `INDETERMINATE`, `LOSSY`) as applicable; no silent normalization. If the Port cannot accept the mapping, `INCOMPATIBLE` may be returned separately as a Port disposition and must not be confused with a loss value.
 
 ## SC-05 · Fork
 
@@ -72,7 +72,7 @@ SCENARIO DOCUMENTED
 ## SC-13 · Semantic downgrade
 
 **Input:** cross-domain mapping removes an important semantic distinction.  
-**Expected:** loss is declared; weaker target representation is not presented as equivalent.
+**Expected:** loss is declared using the current loss vocabulary; weaker target representation is not presented as equivalent.
 
 ## SC-14 · Stale consent
 
@@ -91,17 +91,23 @@ SCENARIO DOCUMENTED
 
 ---
 
-## Future executable form
+## Future executable conformance — decision topics only
 
-If a later Owner decision authorizes executable conformance, each scenario should gain at minimum:
+Executable conformance is **not authorized or specified by this document**. Whether it is needed at all, and what representation or pass/fail model it would use, remains deferred to GitHub Issue #2 or a successor explicit Owner decision.
 
-- a stable scenario identifier;
-- versioned input fixture(s);
-- explicit expected result;
-- allowed loss classification;
-- forbidden authority escalation;
-- provenance expectations;
-- deterministic pass/fail interpretation where appropriate;
-- declared non-deterministic or philosophical boundaries where pass/fail would overclaim.
+If such a decision is ever considered, the following are only **non-binding decision topics**, not requirements:
 
-No executable format is selected by this document.
+- whether stable scenario identifiers are sufficient or need additional version binding;
+- whether fixtures are appropriate and, if so, how they are represented;
+- how expected outcomes should be expressed;
+- how loss classification would be represented;
+- how forbidden authority escalation would be checked;
+- what provenance expectations are necessary;
+- where deterministic pass/fail is legitimate;
+- where non-deterministic, empirical, or philosophical boundaries make binary pass/fail an overclaim.
+
+```text
+DECISION TOPIC
+≠ APPROVED TEST FORMAT
+≠ EXECUTABLE CONFORMANCE CONTRACT
+```
