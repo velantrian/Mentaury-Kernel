@@ -19,6 +19,12 @@ Mentaury-Kernel defines **composition rules**, not a third cognition system. Its
 
 `v0.2.4 ≠ new semantic Canon`
 
+### 🧭 Documentation authority during bootstrap
+
+The permanent Notion↔GitHub authority model is still **OPEN** in [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2). Repository creation and merge of documentation do **not** automatically make GitHub the semantic Canon.
+
+If GitHub and the originating Notion architecture diverge, do not silently choose one surface: stop and reconcile explicitly using [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md).
+
 ## 🧭 Core boundary
 
 ```text
