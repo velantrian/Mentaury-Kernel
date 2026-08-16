@@ -37,6 +37,24 @@ executable conformance suite    NONE
 
 Repository creation does not change any of these values.
 
+## 🧭 Transitional documentation-authority boundary
+
+The originating Notion architecture is currently marked `NOTION-FIRST`, while the permanent Notion↔GitHub semantic authority and conflict-resolution model remains **OPEN** in [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2).
+
+During this bootstrap stage:
+
+```text
+REPOSITORY EXISTS
+≠ GITHUB AUTOMATICALLY BECOMES SEMANTIC CANON
+
+GITHUB / NOTION DIVERGENCE
+→ STOP SILENT PROMOTION
+→ RECONCILE EXPLICITLY
+→ DO NOT GUESS WHICH CHANGE IS AUTHORITATIVE
+```
+
+GitHub is a reviewed specification-bootstrap surface. This temporary rule prevents accidental authority transfer between documentation surfaces; it **does not decide** the permanent authority model tracked in Issue #2.
+
 ## 📐 Evaluation class
 
 Current architecture readiness is evaluated only as:
@@ -85,7 +103,9 @@ If these questions do not establish a distinct composition need, the proposal st
 
 The following require separate decisions and must not be inferred from this bootstrap:
 
-- executable conformance format;
+- permanent Notion ↔ GitHub semantic authority / conflict-resolution model — [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2);
+- repository license — [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2);
+- executable conformance format — [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2);
 - concrete Port representation / serialization;
 - runtime implementation;
 - implementation language;
@@ -95,6 +115,6 @@ The following require separate decisions and must not be inferred from this boot
 
 ## 🛡️ Change rule
 
-Any PR that appears to change truth, identity, cognition, action, runtime, or production authority must be treated as an **architecture-boundary change**, not routine documentation cleanup.
+Any PR that appears to change truth, identity, cognition, action, runtime, production, or documentation authority must be treated as an **architecture-boundary change**, not routine documentation cleanup.
 
 `SPECIFICATION BOOTSTRAP ≠ IMPLEMENTATION AUTHORITY`
