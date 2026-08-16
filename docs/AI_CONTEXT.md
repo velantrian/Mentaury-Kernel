@@ -26,6 +26,7 @@ identity authority exists here
 truth authority exists here
 action authority exists here
 production is authorized
+GitHub automatically became semantic Canon
 ```
 
 Do not create these by implication.
@@ -95,6 +96,38 @@ runtime                         = NONE
 
 `v0.2.4 ≠ new semantic Canon`
 
+## 🧭 Documentation authority during bootstrap
+
+The originating Notion architecture is currently `NOTION-FIRST`, but the permanent Notion↔GitHub authority and conflict-resolution model remains open in [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2).
+
+Until that decision is made:
+
+```text
+REPOSITORY EXISTS
+≠ GITHUB AUTOMATICALLY BECOMES SEMANTIC CANON
+
+NOTION / GITHUB DIVERGENCE
+→ DO NOT SILENTLY CHOOSE
+→ CHECK docs/CURRENT_STATUS.md
+→ RECONCILE EXPLICITLY
+```
+
+Treat `docs/CURRENT_STATUS.md` as the repository-side status surface for this temporary boundary. Do not invent a permanent authority model.
+
+## 🕳️ Loss / disposition distinction
+
+The current architecture-level loss vocabulary is:
+
+```text
+PRESERVED
+PARTIAL
+UNSUPPORTED
+INDETERMINATE
+LOSSY
+```
+
+`DEFERRED` and `INCOMPATIBLE` are Port dispositions, not extra loss values.
+
 ## 🧪 Evidence discipline
 
 Current architecture conformance scenarios are documentation-level expectations only.
@@ -143,6 +176,7 @@ Stop and request an explicit bounded decision before introducing any of the foll
 - identity or truth adjudication;
 - action authority;
 - production/deployment authorization;
-- a new owner over existing Native or Soul semantic domains.
+- a new owner over existing Native or Soul semantic domains;
+- a permanent Notion↔GitHub semantic-authority model not explicitly decided by the Owner.
 
 When uncertain, preserve the boundary and record the uncertainty rather than silently resolving it through implementation.
