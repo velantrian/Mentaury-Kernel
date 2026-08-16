@@ -5,7 +5,8 @@
 **Document envelope:** `DRAFT v0.2.4 · DOCUMENT_RECONCILIATION_ONLY`  
 **Semantic architecture baseline:** `v0.2.3`  
 **Repository stage:** `SPECIFICATION_BOOTSTRAP_ONLY`  
-**External audit checkpoint:** Manus AI read-only audit at PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` remediated on the Draft branch; **re-review pending**.
+**External audit checkpoint:** Manus AI read-only audit at PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` remediated on the Draft branch.  
+**Internal re-review:** `2026-08-16 · READY_TO_MERGE · NO_REMAINING_P0_P1_P2_FOUND`; this is an owner-side/internal documentation review, **not** independent human assurance.
 
 ## ✅ What exists
 
@@ -36,7 +37,7 @@ LLM/model dependency            NONE
 executable conformance suite    NONE
 ```
 
-Repository creation does not change any of these values.
+Repository creation or documentation merge does not change any of these values.
 
 ## 🧭 Transitional documentation-authority boundary
 
@@ -68,18 +69,18 @@ Therefore:
 PASS
 ≠ executable conformance evidence
 ≠ implementation evidence
-≠ independent review
+≠ independent human review
 ≠ runtime authorization
 ≠ production authorization
 ```
 
 ## 🧬 Semantic source reconciliation
 
-The current bootstrap carries forward the bounded semantic pins last reconciled on `2026-08-15`:
+The current bootstrap carries forward the bounded semantic pins reverified on `2026-08-16`:
 
-1. **Velantrim Native Kernel** — `Claim / representation ≠ reality / truth`; explicit uncertainty and accountable revision / retention / loss remain preserved for the composition-relevant scope.
-2. **Mentaury Soul · NPG-v0.1** — imported Creator / historical / current-user / literary / research / model / reviewer material is not automatically `SELF`; fail-closed attribution semantics remain bounded and runtime remains separately unauthorized.
-3. **Mentaury Soul · PCR-v0.1** — `SOURCE / PROVENANCE ≠ CLAIM ≠ EVIDENCE STATUS ≠ BELIEF STATUS ≠ TRUTH`; later Soul work does not automatically supersede this boundary.
+1. **Velantrim Native Kernel** — `Claim / representation ≠ reality / truth`; explicit uncertainty and accountable revision / retention / loss remain preserved for the composition-relevant scope. Current Native authority routing still resolves through IAR-1/IAR-1-R1 and remains scoped/provisional.
+2. **Mentaury Soul · NPG-v0.1** — imported Creator / historical / current-user / literary / research / model / reviewer material is not automatically `SELF`; the frozen contract remains `UNCHANGED`, `IMPLEMENTED_BOUNDED`, with runtime separately unauthorized.
+3. **Mentaury Soul · PCR-v0.1** — `SOURCE / PROVENANCE ≠ CLAIM ≠ EVIDENCE STATUS ≠ BELIEF STATUS ≠ TRUTH`; later ATR/HDE work remains separately bounded and does not supersede Evidence Gate or source-admission ownership.
 
 These are semantic checkpoints, not mirrors of live upstream implementation status.
 
