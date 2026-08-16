@@ -71,7 +71,7 @@ SOURCE UPDATE ≠ AUTOMATIC COMPOSITION UPDATE
 
 ## 📜 Status discipline
 
-Closed local status vocabulary:
+Closed local **Canon/provenance** status vocabulary:
 
 ```text
 INHERITED_CANONICAL
@@ -84,6 +84,29 @@ SUPERSEDED
 ```
 
 Do not invent compound status values to encode scope. Put scope in the explicit `Scope` field.
+
+Future-work items use a separate namespaced ledger vocabulary in `docs/AUDIT_AND_FUTURE_WORK.md`:
+
+```text
+FW_OPEN
+FW_INVESTIGATE
+FW_CANDIDATE
+FW_DEFERRED
+FW_BLOCKED
+FW_NOT_AUTHORIZED
+FW_DONE
+FW_STALE
+FW_NEEDS_REPRODUCTION
+FW_NEEDS_ARCHITECTURE_DECISION
+```
+
+```text
+FW_STATE ≠ Canon/provenance status
+priority ≠ authorization
+future-work entry ≠ selected milestone
+```
+
+Never copy `FW_*` values into the Normative Provenance Matrix.
 
 ## 📌 Current baseline
 
@@ -138,6 +161,8 @@ DOCUMENT_INTERNAL_CONSISTENCY_ONLY
 
 Never translate a documented `PASS` into executable evidence, independent review, implementation evidence, or runtime authorization unless such evidence is separately present and explicitly bound.
 
+If the repository has no CI/workflow for a claim, report `CI: NOT_PRESENT`; do not manufacture a successful check.
+
 ## 🔬 Inclusion test
 
 For every proposed new law, ask:
@@ -154,15 +179,36 @@ If the proposal is merely interesting or architecturally compatible, keep it out
 ARCHITECTURAL FIT ≠ ARCHITECTURAL NECESSITY
 ```
 
+## 🧭 Before selecting future work
+
+`docs/AUDIT_AND_FUTURE_WORK.md` preserves unresolved work; it is **not** a backlog executor.
+
+Before proposing implementation:
+
+1. resolve live `main`, PRs, Issues, and relevant repository configuration;
+2. reconcile GitHub↔Notion if the affected fact or semantic boundary diverges;
+3. reclassify stale ledger items;
+4. reverify affected upstream semantic pins;
+5. prove a concrete uncovered composition failure where a new Kernel law is proposed;
+6. confirm explicit authorization;
+7. select exactly one bounded scope.
+
+```text
+DO NOT AUTO-SELECT NEXT MILESTONE
+```
+
 ## 🗂️ Reading order
 
 1. `README.md` or `README.ru.md`
-2. `docs/CURRENT_STATUS.md`
-3. `docs/ARCHITECTURE.md`
-4. `docs/PROVENANCE_MATRIX.md`
-5. `docs/COMPOSITION_INVARIANTS.md`
-6. `docs/THREAT_MODEL.md`
-7. `docs/CONFORMANCE_SCENARIOS.md`
+2. this file: `docs/AI_CONTEXT.md`
+3. `docs/CURRENT_STATUS.md`
+4. resolve live GitHub `main` / PRs / Issues / relevant repository configuration
+5. `docs/AUDIT_AND_FUTURE_WORK.md`
+6. `docs/ARCHITECTURE.md`
+7. `docs/PROVENANCE_MATRIX.md`
+8. `docs/COMPOSITION_INVARIANTS.md`
+9. `docs/THREAT_MODEL.md`
+10. `docs/CONFORMANCE_SCENARIOS.md`
 
 ## 🛑 Stop conditions
 
