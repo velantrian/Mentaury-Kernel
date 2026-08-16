@@ -77,13 +77,13 @@ Only composition-relevant boundaries: non-conflation of representation and truth
 Cross-domain transfer must not silently convert Native representations or history into truth, or erase uncertainty and revision lineage.
 
 **Supersedes / Superseded by**  
-No local predecessor; not superseded as of `2026-08-15`.
+No local predecessor; not superseded as of `2026-08-16`.
 
 **Exact source locator / checkpoint**  
 [Native Kernel · Core Architecture & Invariants](https://app.notion.com/p/3a5ac84d0547815ba58bd2ed52771601) → `IAR-1 reconciled checkpoint · Reconciled minimum · 2026-08-11`.
 
 **Verified as of**  
-`2026-08-15` — rechecked after later H11 validation hardening; the owning Native architecture explicitly retained the same architecture meaning and scoped/provisional status.
+`2026-08-16` — rechecked against the current Native architecture authority-routing surface after later H11/authority-routing hygiene. The current authority chain still resolves through IAR-1/IAR-1-R1, preserves the same problem-level minimum, keeps the architecture scoped/provisional, and does not promote implementation/profile structures into universal Canon.
 
 **Reconciliation trigger**  
 The referenced minimum is superseded, materially re-scoped, loses support, or Native changes the composition-relevant meaning or ownership of Claim, uncertainty, revision, retention, or loss.
@@ -114,13 +114,13 @@ Imported human, historical, literary, research, model, reviewer, and current-use
 Composition must not launder imported material into Mentaury autobiography or `SELF` merely because it was transported, repeated, summarized, or supplied by an owner.
 
 **Supersedes / Superseded by**  
-No local predecessor; not superseded as of `2026-08-15`.
+No local predecessor; not superseded as of `2026-08-16`.
 
 **Exact source locator / checkpoint**  
 [Mentaury · Research Registry](https://app.notion.com/p/3b5ac84d05478106b93dff3dcefc6396) → `NPG-v0.1 Contract Freeze (#86)` + `Budget Semantics Clarified (#87)`. The named frozen checkpoint, not the current top of the registry, is the semantic pin.
 
 **Verified as of**  
-`2026-08-15` — the current Soul state records bounded implementation while preserving the frozen fail-closed attribution semantics and keeping runtime unauthorized.
+`2026-08-16` — the current Soul research registry still records `NPG-v0.1 · UNCHANGED`, `IMPLEMENTED_BOUNDED`, and runtime `NOT_AUTHORIZED`; later Soul milestones do not supersede the pinned fail-closed attribution semantics.
 
 **Reconciliation trigger**  
 The NPG self/non-self contract is superseded, materially weakened/re-scoped, or the authoritative identity/continuation evidence contract changes what may establish verified self-attribution.
@@ -151,13 +151,13 @@ Composition inheritance of provenance / claim separation only. PCR representatio
 Provenance metadata and claim representation must survive transfer without being mistaken for evidence admission, belief commitment, or truth.
 
 **Supersedes / Superseded by**  
-No local predecessor; not superseded as of `2026-08-15`.
+No local predecessor; not superseded as of `2026-08-16`.
 
 **Exact source locator / checkpoint**  
 [Mentaury Soul](https://app.notion.com/p/3b2ac84d054781cf841ed08ca339f211) → `Phase 3 PCR-v0.1 · IMPLEMENTED_BOUNDED · FROZEN_DOCS` and its explicit provenance/claim/evidence/belief/truth separation.
 
 **Verified as of**  
-`2026-08-15` — later Soul ATR/HDE work does not supersede this separation; Evidence Gate and source-admission ownership remain distinct.
+`2026-08-16` — the current Soul surface continues to state `SOURCE / PROVENANCE ≠ CLAIM ≠ EVIDENCE STATUS ≠ BELIEF STATUS ≠ TRUTH`; later ATR/HDE work remains separately bounded and does not supersede Evidence Gate or source-admission ownership.
 
 **Reconciliation trigger**  
 PCR provenance/claim separation is superseded, materially weakened/re-scoped, or ownership of evidence status, belief status, truth, or source admission changes in a way material to composition.
