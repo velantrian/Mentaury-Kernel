@@ -118,6 +118,13 @@ The following require separate decisions and must not be inferred from this boot
 - security/deployment profile;
 - production authorization.
 
+Detailed future-work classifications, audit requirements, and non-authorization boundaries are maintained in [`docs/AUDIT_AND_FUTURE_WORK.md`](AUDIT_AND_FUTURE_WORK.md).
+
+```text
+FUTURE-WORK ENTRY ≠ IMPLEMENTATION AUTHORIZATION
+PRIORITY ≠ AUTHORIZATION
+```
+
 ## 🛡️ Change rule
 
 Any PR that appears to change truth, identity, cognition, action, runtime, production, or documentation authority must be treated as an **architecture-boundary change**, not routine documentation cleanup.
