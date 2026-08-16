@@ -4,7 +4,8 @@
 **Bootstrap date:** `2026-08-16`  
 **Document envelope:** `DRAFT v0.2.4 · DOCUMENT_RECONCILIATION_ONLY`  
 **Semantic architecture baseline:** `v0.2.3`  
-**Repository stage:** `SPECIFICATION_BOOTSTRAP_ONLY`
+**Repository stage:** `SPECIFICATION_BOOTSTRAP_ONLY`  
+**External audit checkpoint:** Manus AI read-only audit at PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` remediated on the Draft branch; **re-review pending**.
 
 ## ✅ What exists
 
