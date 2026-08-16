@@ -24,11 +24,21 @@ CAPABILITY ≠ AUTHORIZATION
 
 ## 3. Loss Explicitness
 
-If a target representation cannot preserve a material semantic distinction, the loss must be visible.
+If a target representation cannot preserve a material semantic distinction, the loss must be visible using the current five-value loss taxonomy:
 
 ```text
-SEMANTIC INCOMPATIBILITY
-→ explicit PARTIAL / LOSSY / INCOMPATIBLE
+PRESERVED
+PARTIAL
+UNSUPPORTED
+INDETERMINATE
+LOSSY
+```
+
+`DEFERRED` and `INCOMPATIBLE` are Port dispositions, not additional loss values.
+
+```text
+SEMANTIC LIMITATION
+→ explicit loss classification
 → never silent approximation
 ```
 
