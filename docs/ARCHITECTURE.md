@@ -272,3 +272,15 @@ ARCHITECTURE_GATE_READY
 ≠ CREATE_RUNTIME_AUTHORITY
 ≠ PRODUCTION_AUTHORITY
 ```
+
+## 14. Ecosystem substrate-neutral relation
+
+Mentaury-Kernel participates in the wider Velantrim substrate-neutral architecture as the **cross-domain preservation layer**. Native Kernel defines technology-neutral obligations inside epistemic-history semantics; Mentaury-Kernel defines what must survive when meaning crosses independently governed domains.
+
+```text
+SUBSTRATE CHANGE != SEMANTIC PERMISSION
+CROSS-DOMAIN TRANSFER != AUTHORITY TRANSFER
+SAME OUTPUT != SAME COMPOSITION CONFORMANCE
+```
+
+This relation does not make Mentaury-Kernel the owner of Crystal, Titan, Soul, Continuum, or Native Kernel semantics. It only constrains composition where provenance, scope, authority, loss, continuity, or admission meaning would otherwise be silently collapsed.
