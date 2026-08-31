@@ -153,10 +153,11 @@ LOSSY
 
 ## 🧪 Evidence discipline
 
-Current architecture conformance scenarios are documentation-level expectations only.
+SC-01…SC-16 remain documentation-level expectations only. A separately authorized bounded CapabilityPort profile v0 may execute structural checks for the v0.1 port representation; it does not execute those architecture scenarios or grant runtime authority.
 
 ```text
 DOCUMENT_INTERNAL_CONSISTENCY_ONLY
+CAPABILITYPORT_PROFILE_V0 = BOUNDED_STRUCTURAL_CONFORMANCE_ONLY
 ```
 
 Never translate a documented `PASS` into executable evidence, independent review, implementation evidence, or runtime authorization unless such evidence is separately present and explicitly bound.
