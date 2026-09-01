@@ -13,7 +13,7 @@ Mentaury-Kernel defines **composition rules**, not a third cognition system. Its
 - **Repository stage:** `SPECIFICATION_BOOTSTRAP_ONLY`
 - **Architecture:** `ARCHITECTURE_ONLY · TECHNOLOGY_NEUTRAL`
 - **Runtime code:** `NONE`
-- **Executable conformance:** `CAPABILITYPORT PROFILE V0 · BOUNDED DRAFT`
+- **Executable conformance:** `CAPABILITYPORT PROFILE V0 · IMPLEMENTED ON main · PROFILE STATUS DRAFT`
 - **Cognition runtime:** `NONE`
 - **Truth / identity / action authority:** `NONE`
 - **Production authority:** `NONE`
