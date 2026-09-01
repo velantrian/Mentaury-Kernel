@@ -62,10 +62,13 @@ def validate_capability_port(value: object) -> ConformanceResult:
     keys = frozenset(value)
     missing = sorted(_REQUIRED_FIELDS - keys)
     forbidden = sorted(_FORBIDDEN_AUTHORITY_FIELDS & keys)
+    unsupported = sorted(keys - _REQUIRED_FIELDS - _FORBIDDEN_AUTHORITY_FIELDS)
     if missing:
         errors.append(f"missing required fields: {', '.join(missing)}")
     if forbidden:
         errors.append(f"forbidden authority fields: {', '.join(forbidden)}")
+    if unsupported:
+        errors.append(f"unsupported fields: {', '.join(unsupported)}")
 
     for field in (
         "port_id",
@@ -81,15 +84,15 @@ def validate_capability_port(value: object) -> ConformanceResult:
         "compatibility_constraints",
         "revocation_semantics",
     ):
-        if field in value and not _nonempty_string(value[field]):
-            errors.append(f"{field} must be a non-empty string")
+        if field in value and not _known_nonempty_string(value[field]):
+            errors.append(f"{field} must be a non-empty known string")
 
     semantic_version = value.get("semantic_version")
-    if _nonempty_string(semantic_version) and not _SEMVER.fullmatch(semantic_version):
+    if _known_nonempty_string(semantic_version) and not _SEMVER.fullmatch(semantic_version):
         errors.append("semantic_version must use MAJOR.MINOR.PATCH")
 
     if (
-        _nonempty_string(value.get("source_domain"))
+        _known_nonempty_string(value.get("source_domain"))
         and value.get("source_domain") == value.get("target_domain")
     ):
         errors.append("source_domain and target_domain must differ")
@@ -115,10 +118,10 @@ def _validate_string_list(
     if allow_none_token and item == "NONE":
         return
     if not isinstance(item, list) or not item:
-        errors.append(f"{field} must be NONE or a non-empty string list")
+        errors.append(f"{field} must be NONE or a non-empty known string list")
         return
-    if any(not _nonempty_string(entry) for entry in item):
-        errors.append(f"{field} entries must be non-empty strings")
+    if any(not _known_nonempty_string(entry) for entry in item):
+        errors.append(f"{field} entries must be non-empty known strings")
     elif len(set(item)) != len(item):
         errors.append(f"{field} entries must be unique")
 
@@ -127,10 +130,10 @@ def _validate_side_effects(value: object, errors: list[str]) -> None:
     if value == "NONE":
         return
     if not isinstance(value, list) or not value:
-        errors.append("side_effects must be NONE or a non-empty bounded string list")
+        errors.append("side_effects must be NONE or a non-empty bounded known string list")
         return
-    if any(not _nonempty_string(entry) for entry in value):
-        errors.append("side_effects entries must be non-empty strings")
+    if any(not _known_nonempty_string(entry) for entry in value):
+        errors.append("side_effects entries must be non-empty known strings")
     elif len(set(value)) != len(value):
         errors.append("side_effects entries must be unique")
 
@@ -142,14 +145,19 @@ def _validate_declared_loss(value: object, errors: list[str]) -> None:
     if frozenset(value) != {"classification", "check"}:
         errors.append("declared_loss requires exact classification and check fields")
         return
-    if not _nonempty_string(value.get("classification")):
-        errors.append("declared_loss.classification must be a non-empty string")
-    if not _nonempty_string(value.get("check")):
-        errors.append("declared_loss.check must be a non-empty string")
+    if not _known_nonempty_string(value.get("classification")):
+        errors.append("declared_loss.classification must be a non-empty known string")
+    if not _known_nonempty_string(value.get("check")):
+        errors.append("declared_loss.check must be a non-empty known string")
 
 
-def _nonempty_string(value: object) -> bool:
-    return isinstance(value, str) and bool(value) and value == value.strip()
+def _known_nonempty_string(value: object) -> bool:
+    return (
+        isinstance(value, str)
+        and bool(value)
+        and value == value.strip()
+        and value != "UNKNOWN"
+    )
 
 
 def _result(errors: tuple[str, ...]) -> ConformanceResult:
