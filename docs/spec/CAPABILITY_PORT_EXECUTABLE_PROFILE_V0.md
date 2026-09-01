@@ -6,7 +6,7 @@ Owning specification: `docs/spec/CAPABILITY_PORT_V0_1.md`
 
 ## Decision
 
-This profile deterministically checks a concrete JSON-compatible representation of the already documented CapabilityPort v0.1 fields. It is an implementation profile, not semantic Canon.
+This profile deterministically checks a concrete JSON-compatible representation of the already documented CapabilityPort v0.1 fields. The v0 profile has a closed field set: runtime-specific metadata must be projected out before validation. It is an implementation profile, not semantic Canon.
 
 ```text
 CONFORMANCE PASS != TARGET ADMISSION
@@ -17,7 +17,7 @@ EXECUTABLE PROFILE != RUNTIME PORT
 
 ## Representation
 
-The profile requires all v0.1 fields. Strings must be explicit and non-empty. `semantic_version` uses `MAJOR.MINOR.PATCH`. Cross-domain source and target must differ. `target_admission_required` must be exactly `true`.
+The profile requires all v0.1 fields and rejects unsupported extra fields. Critical strings and string-list entries must be explicit, non-empty, and not `UNKNOWN`. `semantic_version` uses `MAJOR.MINOR.PATCH`. Cross-domain source and target must differ. `target_admission_required` must be exactly `true`.
 
 `transformations` and `side_effects` are either `NONE` or a non-empty unique string list. `declared_loss` contains exactly:
 

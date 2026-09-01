@@ -8,7 +8,8 @@
 **Bootstrap merge:** PR `#1` · `MERGED` · squash/main `ea3b7fd33ed4aa85806ccff2b1a061360c8530af` · signature `VERIFIED · VALID`  
 **External audit checkpoint:** Manus AI read-only audit at historical PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` were remediated before merge.  
 **Internal re-review:** `2026-08-16 · READY_TO_MERGE · NO_REMAINING_P0_P1_P2_FOUND` at pre-merge head `087501f4ca17d739ce15a0f83972097633d5444b`; owner-side/internal documentation review, **not** independent human assurance.  
-**Post-merge reconciliation:** `2026-08-16 · RECONCILED`; this status update records the already-merged bootstrap and changes no semantic law or authority.
+**Post-merge reconciliation:** `2026-08-16 · RECONCILED`; this status update records the already-merged bootstrap and changes no semantic law or authority.  
+**CapabilityPort profile v0:** PR `#8` · `MERGED` · exact head `a9175485012261694cbded776088d3c2f894e6cb` → main `f73ca41ac6043d45a0dd2eb635eaa3b8955f9f4c`; exact-head GitHub Actions structural suite `SUCCESS`; independent human review remains `NOT_CLAIMED`.
 
 ## ✅ What exists
 
@@ -22,7 +23,7 @@
 - Particularity ↔ Generalization boundary;
 - architecture-level threat model;
 - architecture-level conformance scenarios;
-- bounded CapabilityPort executable conformance profile v0 on the current Draft branch;
+- bounded CapabilityPort executable conformance profile v0 implemented on `main`; its semantic-profile status remains `DRAFT`;
 - inclusion discipline for future invariants;
 - reviewed GitHub specification-bootstrap package on `main`.
 
@@ -38,7 +39,7 @@ production authority            NONE
 wire protocol                   NONE
 storage/database decision       NONE
 LLM/model dependency            NONE
-executable conformance suite    BOUNDED CAPABILITYPORT PROFILE V0 · DRAFT
+executable conformance suite    BOUNDED CAPABILITYPORT PROFILE V0 · IMPLEMENTED ON main · PROFILE STATUS DRAFT
 ```
 
 Repository creation, bootstrap merge, or this post-merge status reconciliation do not change any of these values.
@@ -63,16 +64,21 @@ GitHub is a reviewed specification-bootstrap surface. This temporary rule preven
 
 ## 📐 Evaluation class
 
-Current architecture readiness is evaluated only as:
+Current architecture readiness has two separate classes:
 
-`DOCUMENT_INTERNAL_CONSISTENCY_ONLY`
+```text
+SC-01…SC-16                         DOCUMENT_INTERNAL_CONSISTENCY_ONLY
+CapabilityPort profile v0            BOUNDED_STRUCTURAL_CONFORMANCE_ONLY
+```
 
 Therefore:
 
 ```text
-PASS
+DOCUMENTED-SCENARIO PASS
 ≠ executable conformance evidence
-≠ implementation evidence
+
+PROFILE-V0 PASS
+= evidence only that the closed structural representation conforms
 ≠ independent human review
 ≠ runtime authorization
 ≠ production authorization

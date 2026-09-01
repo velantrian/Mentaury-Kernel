@@ -43,6 +43,16 @@ class CapabilityPortConformanceTests(unittest.TestCase):
         self.assertFalse(result.conforming)
         self.assertIn("missing required fields: provenance_contract", result.errors)
 
+    def test_unknown_critical_field_fails_closed(self) -> None:
+        port = valid_port()
+        port["provenance_contract"] = "UNKNOWN"
+        result = validate_capability_port(port)
+        self.assertFalse(result.conforming)
+        self.assertIn(
+            "provenance_contract must be a non-empty known string",
+            result.errors,
+        )
+
     def test_declared_loss_requires_classification_and_check(self) -> None:
         port = valid_port()
         port["declared_loss"] = {"classification": "PARTIAL"}
@@ -82,6 +92,13 @@ class CapabilityPortConformanceTests(unittest.TestCase):
                 result = validate_capability_port(port)
                 self.assertFalse(result.conforming)
                 self.assertTrue(any("forbidden authority fields" in e for e in result.errors))
+
+    def test_unsupported_authority_field_fails_closed(self) -> None:
+        port = valid_port()
+        port["governance_authority"] = "global"
+        result = validate_capability_port(port)
+        self.assertFalse(result.conforming)
+        self.assertIn("unsupported fields: governance_authority", result.errors)
 
     def test_validation_is_deterministic(self) -> None:
         port = valid_port()
