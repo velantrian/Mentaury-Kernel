@@ -22,6 +22,7 @@
 - Particularity ↔ Generalization boundary;
 - architecture-level threat model;
 - architecture-level conformance scenarios;
+- bounded CapabilityPort executable conformance profile v0 on the current Draft branch;
 - inclusion discipline for future invariants;
 - reviewed GitHub specification-bootstrap package on `main`.
 
@@ -37,7 +38,7 @@ production authority            NONE
 wire protocol                   NONE
 storage/database decision       NONE
 LLM/model dependency            NONE
-executable conformance suite    NONE
+executable conformance suite    BOUNDED CAPABILITYPORT PROFILE V0 · DRAFT
 ```
 
 Repository creation, bootstrap merge, or this post-merge status reconciliation do not change any of these values.
@@ -110,7 +111,8 @@ The following require separate decisions and must not be inferred from this boot
 
 - permanent Notion ↔ GitHub semantic authority / conflict-resolution model — [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2);
 - repository license — [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2);
-- executable conformance format — [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2);
+- future executable conformance formats beyond the bounded CapabilityPort profile v0 — separate Owner decision;
+- Issue #2 sections 1–2 (permanent documentation authority and license) remain OPEN;
 - concrete Port representation / serialization;
 - runtime implementation;
 - implementation language;

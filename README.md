@@ -13,6 +13,7 @@ Mentaury-Kernel defines **composition rules**, not a third cognition system. Its
 - **Repository stage:** `SPECIFICATION_BOOTSTRAP_ONLY`
 - **Architecture:** `ARCHITECTURE_ONLY · TECHNOLOGY_NEUTRAL`
 - **Runtime code:** `NONE`
+- **Executable conformance:** `CAPABILITYPORT PROFILE V0 · BOUNDED DRAFT`
 - **Cognition runtime:** `NONE`
 - **Truth / identity / action authority:** `NONE`
 - **Production authority:** `NONE`
@@ -128,7 +129,12 @@ docs/
 ├── PROVENANCE_MATRIX.md
 ├── COMPOSITION_INVARIANTS.md
 ├── THREAT_MODEL.md
-└── CONFORMANCE_SCENARIOS.md
+├── CONFORMANCE_SCENARIOS.md
+└── spec/CAPABILITY_PORT_EXECUTABLE_PROFILE_V0.md
+
+conformance/          # bounded validators; no runtime execution
+tests/                # deterministic conformance tests
+.github/workflows/    # exact-revision conformance CI
 
 .github/
 └── pull_request_template.md

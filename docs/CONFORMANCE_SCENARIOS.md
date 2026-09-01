@@ -1,6 +1,8 @@
 # 🧪 Architecture-Level Conformance Scenarios
 
-These scenarios define **observable architecture expectations** for a future implementation. They are not an executable test suite and do not prove runtime conformance today.
+These scenarios define **observable architecture expectations** for a future implementation. SC-01…SC-16 are not an executable test suite and do not prove runtime conformance today.
+
+The separately authorized CapabilityPort profile v0 checks only the concrete port representation described in `docs/spec/CAPABILITY_PORT_EXECUTABLE_PROFILE_V0.md`. It does not claim to execute or prove these broader scenarios.
 
 ```text
 SCENARIO DOCUMENTED
