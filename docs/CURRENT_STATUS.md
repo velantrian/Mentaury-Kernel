@@ -138,3 +138,29 @@ PRIORITY ≠ AUTHORIZATION
 Any PR that appears to change truth, identity, cognition, action, runtime, production, or documentation authority must be treated as an **architecture-boundary change**, not routine documentation cleanup.
 
 `SPECIFICATION BOOTSTRAP ≠ IMPLEMENTATION AUTHORITY`
+
+
+---
+
+## 🔬 Research delta — history / provenance boundary · 2026-09-18
+
+A docs-only research refinement is recorded in
+[`docs/research/HISTORY_PROVENANCE_BOUNDARY_REFINEMENT_2026_09_18.md`](research/HISTORY_PROVENANCE_BOUNDARY_REFINEMENT_2026_09_18.md).
+
+```text
+EXPERIENCE ≠ EXPERIENCE-DERIVED STATE ≠ EXPERIENCE PROVENANCE
+CAUSAL CONTINUITY ≠ EPISTEMIC CONTINUITY
+INHERITED EFFECT ≠ INHERITED HISTORY
+INHERITED HISTORY ≠ INHERITED AUTHORITY
+```
+
+Current disposition remains:
+
+```text
+NO_NEW_INVARIANT
+NO_NEW_PORT
+NO_RUNTIME_CHANGE
+ARCHITECTURE CONSEQUENCE = NONE
+```
+
+Reopen Canon/invariant discussion only if a concrete cross-domain composition case demonstrates material semantic loss that existing provenance / scope / uncertainty / declared-loss / authority-boundary rules cannot express.
