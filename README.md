@@ -63,7 +63,7 @@ SOURCE UPDATE ≠ AUTOMATIC COMPOSITION UPDATE
 
 | Domain | Owns | Does not own |
 |---|---|---|
-| 🧬 **Velantrim Native Kernel** | epistemic-history semantics: provenance, uncertainty, accountable revision / retention / loss | cognition, identity admission, relationship truth |
+| 🧬 **Velantrim Native Kernel** | epistemic-history semantics: provenance, uncertainty, accountable revision / retention / loss | cognition, identity admission, consent, relationship truth |
 | 🌀 **Mentaury Soul** | cognition-domain and identity-domain semantics | rewriting upstream provenance or automatically promoting claims to truth |
 | 🌉 **Continuity Port** | transport, version / compatibility checks, structural validation, declared loss, bounded receipts | truth, identity, consent, action decisions |
 | 🪁 **Mentaury-Kernel** | composition invariants, authority boundaries, cross-system threat model, conformance specification | internal algorithms, superior authority, runtime coordination |
@@ -130,6 +130,10 @@ docs/
 ├── COMPOSITION_INVARIANTS.md
 ├── THREAT_MODEL.md
 ├── CONFORMANCE_SCENARIOS.md
+├── research/README.md
+├── research/EITI_COMPOSITION_RESEARCH_INPUT.md
+├── research/HISTORY_PROVENANCE_BOUNDARY_REFINEMENT_2026_09_18.md
+├── spec/CAPABILITY_PORT_V0_1.md
 └── spec/CAPABILITY_PORT_EXECUTABLE_PROFILE_V0.md
 
 conformance/          # bounded validators; no runtime execution

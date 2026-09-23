@@ -7,6 +7,14 @@ on:
       - 'tests/**'
       - 'docs/spec/CAPABILITY_PORT_**'
       - '.github/workflows/conformance.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'conformance/**'
+      - 'tests/**'
+      - 'docs/spec/CAPABILITY_PORT_**'
+      - '.github/workflows/conformance.yml'
   workflow_dispatch:
 
 permissions:

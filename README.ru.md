@@ -13,6 +13,7 @@ Mentaury-Kernel определяет **правила композиции**, а
 - **Стадия репозитория:** `SPECIFICATION_BOOTSTRAP_ONLY`
 - **Архитектура:** `ARCHITECTURE_ONLY · TECHNOLOGY_NEUTRAL`
 - **Runtime-код:** `NONE`
+- **Executable conformance:** `CAPABILITYPORT PROFILE V0 · IMPLEMENTED ON main · PROFILE STATUS DRAFT`
 - **Cognition runtime:** `NONE`
 - **Truth / identity / action authority:** `NONE`
 - **Production authority:** `NONE`
@@ -62,7 +63,7 @@ SOURCE UPDATE ≠ AUTOMATIC COMPOSITION UPDATE
 
 | Контур | Владеет | Не владеет |
 |---|---|---|
-| 🧬 **Velantrim Native Kernel** | epistemic-history semantics: provenance, uncertainty, accountable revision / retention / loss | cognition, identity admission, relationship truth |
+| 🧬 **Velantrim Native Kernel** | epistemic-history semantics: provenance, uncertainty, accountable revision / retention / loss | cognition, identity admission, consent, relationship truth |
 | 🌀 **Mentaury Soul** | cognition-domain и identity-domain semantics | переписыванием upstream provenance или автоматическим повышением claim до truth |
 | 🌉 **Continuity Port** | transport, version / compatibility checks, structural validation, declared loss, bounded receipts | truth, identity, consent, action decisions |
 | 🪁 **Mentaury-Kernel** | composition invariants, authority boundaries, cross-system threat model, conformance specification | внутренними алгоритмами, superior authority, runtime coordination |
@@ -128,7 +129,16 @@ docs/
 ├── PROVENANCE_MATRIX.md
 ├── COMPOSITION_INVARIANTS.md
 ├── THREAT_MODEL.md
-└── CONFORMANCE_SCENARIOS.md
+├── CONFORMANCE_SCENARIOS.md
+├── research/README.md
+├── research/EITI_COMPOSITION_RESEARCH_INPUT.md
+├── research/HISTORY_PROVENANCE_BOUNDARY_REFINEMENT_2026_09_18.md
+├── spec/CAPABILITY_PORT_V0_1.md
+└── spec/CAPABILITY_PORT_EXECUTABLE_PROFILE_V0.md
+
+conformance/          # bounded validators; no runtime execution
+tests/                # deterministic conformance tests
+.github/workflows/    # exact-revision conformance CI
 
 .github/
 └── pull_request_template.md

@@ -166,6 +166,31 @@ PCR provenance/claim separation is superseded, materially weakened/re-scoped, or
 
 ## 5. Local composition rules
 
+### 5.1 Coverage registry for the 12-item composition taxonomy
+
+The twelve current composition invariants are local Mentaury-Kernel rules defined in `docs/COMPOSITION_INVARIANTS.md`. This registry supplies the provenance fields required by §2 without changing their wording, order, or semantic status.
+
+| ID | Invariant | Source artifact | Source status | Local composition status | Scope | Rationale | Supersedes / Superseded by |
+|---|---|---|---|---|---|---|---|
+| CI-01 | Provenance Conservation | `docs/COMPOSITION_INVARIANTS.md §1` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | provenance across cross-domain transformation | prevent transformed material from appearing independently sourced | none |
+| CI-02 | Authority Non-Escalation | `docs/COMPOSITION_INVARIANTS.md §2` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | authority across integrated domains | prevent technical integration from creating truth, identity, consent, action, or runtime authority | none |
+| CI-03 | Loss Explicitness | `docs/COMPOSITION_INVARIANTS.md §3` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | semantic degradation during transfer | prevent weaker representations from silently strengthening or normalizing source meaning | none |
+| CI-04 | Admission Isolation | `docs/COMPOSITION_INVARIANTS.md §4` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | delivery / validation versus target-domain admission | prevent transport or structural validity from becoming semantic admission | none |
+| CI-05 | Branch Non-Collapse | `docs/COMPOSITION_INVARIANTS.md §5` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | forked histories and current branch state | preserve shared provenance without collapsing later divergence | none |
+| CI-06 | Revision Accountability | `docs/COMPOSITION_INVARIANTS.md §6` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | material revision lineage | prevent current state from erasing meaning carried by how it changed | none |
+| CI-07 | Consent Propagation / Freshness | `docs/COMPOSITION_INVARIANTS.md §7` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | copied / restored / migrated consent state | prevent historical consent from becoming automatic current authority | none |
+| CI-08 | Freshness Accountability | `docs/COMPOSITION_INVARIANTS.md §8` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | stale receipts, assumptions, semantics, and inputs | require reconciliation after material invalidating change | none |
+| CI-09 | Particularity Preservation | `docs/COMPOSITION_INVARIANTS.md §9` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | individual, aggregate, and general-model levels | prevent scope inflation and person-model/person conflation | none |
+| CI-10 | Non-Circular Generalization | `docs/COMPOSITION_INVARIANTS.md §10` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | subject-derived aggregates returned to the same subject | prevent transformed dependent material from masquerading as independent support | none |
+| CI-11 | Receipt Non-Laundering | `docs/COMPOSITION_INVARIANTS.md §11` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | bounded receipts and later replay | prevent receipts from becoming bearer tokens for broader authority | none |
+| CI-12 | Composition ≠ Cognition | `docs/COMPOSITION_INVARIANTS.md §12` | `COMPOSITION_LOCAL · DRAFT semantic baseline v0.2.3` | `COMPOSITION_PROPOSED` | ownership boundary of Mentaury-Kernel | prevent composition rules from absorbing internal cognition or epistemic-history implementation | none |
+
+**Origin project / composition for CI-01…CI-12:** `Mentaury-Kernel · local composition`.
+
+The detailed local rules below are retained as focused cross-cutting records; they do not replace the twelve-item coverage registry.
+
+### 5.2 Focused local records
+
 ### MK-01 · Port validation ≠ semantic approval
 
 **Invariant**  

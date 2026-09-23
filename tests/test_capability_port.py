@@ -22,7 +22,7 @@ def valid_port() -> dict[str, object]:
         "provenance_contract": "source-span/v1",
         "transformations": "NONE",
         "declared_loss": {
-            "classification": "NONE",
+            "classification": "PRESERVED",
             "check": "exact source identity and span retained",
         },
         "side_effects": "NONE",
@@ -57,6 +57,34 @@ class CapabilityPortConformanceTests(unittest.TestCase):
         port = valid_port()
         port["declared_loss"] = {"classification": "PARTIAL"}
         self.assertFalse(validate_capability_port(port).conforming)
+
+    def test_declared_loss_rejects_unknown_classification(self) -> None:
+        port = valid_port()
+        port["declared_loss"] = {
+            "classification": "BANANA",
+            "check": "placeholder",
+        }
+        result = validate_capability_port(port)
+        self.assertFalse(result.conforming)
+        self.assertTrue(
+            any("declared_loss.classification must be one of" in e for e in result.errors)
+        )
+
+    def test_non_string_field_name_fails_closed(self) -> None:
+        port = valid_port()
+        port[1] = "malformed"
+        result = validate_capability_port(port)
+        self.assertFalse(result.conforming)
+        self.assertIn("port field names must be strings", result.errors)
+
+    def test_reserved_none_token_cannot_appear_inside_lists(self) -> None:
+        for field in ("transformations", "side_effects"):
+            with self.subTest(field=field):
+                port = valid_port()
+                port[field] = ["NONE"]
+                result = validate_capability_port(port)
+                self.assertFalse(result.conforming)
+                self.assertTrue(any("reserved NONE token" in e for e in result.errors))
 
     def test_incompatible_or_ambiguous_versions_fail_closed(self) -> None:
         port = valid_port()

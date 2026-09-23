@@ -9,7 +9,8 @@
 **External audit checkpoint:** Manus AI read-only audit at historical PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` were remediated before merge.  
 **Internal re-review:** `2026-08-16 · READY_TO_MERGE · NO_REMAINING_P0_P1_P2_FOUND` at pre-merge head `087501f4ca17d739ce15a0f83972097633d5444b`; owner-side/internal documentation review, **not** independent human assurance.  
 **Post-merge reconciliation:** `2026-08-16 · RECONCILED`; this status update records the already-merged bootstrap and changes no semantic law or authority.  
-**CapabilityPort profile v0:** PR `#8` · `MERGED` · exact head `a9175485012261694cbded776088d3c2f894e6cb` → main `f73ca41ac6043d45a0dd2eb635eaa3b8955f9f4c`; exact-head GitHub Actions structural suite `SUCCESS`; independent human review remains `NOT_CLAIMED`.
+**Repository audit checkpoint:** `2026-09-23` against `main@c7123349e85acab9dee9f55542b42b06c831efe8` before the remediation branch; open PRs at that checkpoint `0`, open Issues `#2` only, one CapabilityPort workflow present, and `main` observed unprotected.  
+**CapabilityPort profile v0:** PR `#9` · `MERGED` · exact tested head `3990cb32f4c4426ecb31bcff0a1e4c4a439aca32` → main `cae9a645c7c50883133203c6bcc39609c313b37c`; exact-head GitHub Actions structural suite `SUCCESS`. At the 2026-09-23 audit base, the validator, tests, workflow, and profile/spec blobs still matched that tested PR #9 head; independent human review remains `NOT_CLAIMED`.
 
 ## ✅ What exists
 
