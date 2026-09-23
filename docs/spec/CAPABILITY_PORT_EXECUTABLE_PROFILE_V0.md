@@ -21,8 +21,10 @@ The profile requires all v0.1 fields and rejects unsupported extra fields. Criti
 
 `transformations` and `side_effects` are either `NONE` or a non-empty unique string list. `declared_loss` contains exactly:
 
-- `classification` — a declared loss classification;
+- `classification` — one of `PRESERVED / PARTIAL / UNSUPPORTED / INDETERMINATE / LOSSY`;
 - `check` — how that declaration is checked.
+
+`PRESERVED` is the explicit no-material-loss classification for this profile; `NONE` is reserved as the whole-field token for `transformations` and `side_effects`, and must not appear inside their lists.
 
 The profile rejects embedded claims of truth, identity, action, production, admission waiver, or other authority escalation. Rejection means only that the representation is non-conforming.
 
