@@ -69,7 +69,7 @@ Does this change remove, collapse, or approximate any distinction?
 - [ ] Executable conformance evidence exists, is separately authorized, and is explicitly linked
 - [ ] Other — explain
 
-Do not equate documentation `PASS` with implementation evidence. Executable conformance remains deferred unless a separate Owner decision authorizes it.
+Do not equate documentation `PASS` with implementation evidence. The bounded CapabilityPort profile v0 is separately authorized; any executable conformance beyond that exact profile remains deferred unless a separate Owner decision authorizes it.
 
 ### 🛑 Non-authorizations
 
