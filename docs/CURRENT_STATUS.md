@@ -9,8 +9,8 @@
 **External audit checkpoint:** Manus AI read-only audit at historical PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` were remediated before merge.  
 **Internal re-review:** `2026-08-16 · READY_TO_MERGE · NO_REMAINING_P0_P1_P2_FOUND` at pre-merge head `087501f4ca17d739ce15a0f83972097633d5444b`; owner-side/internal documentation review, **not** independent human assurance.  
 **Post-merge reconciliation:** `2026-08-16 · RECONCILED`; this status update records the already-merged bootstrap and changes no semantic law or authority.  
-**Repository audit checkpoint:** `2026-09-23` against `main@c7123349e85acab9dee9f55542b42b06c831efe8` before the remediation branch; open PRs at that checkpoint `0`, open Issues `#2` only, one CapabilityPort workflow present, and `main` observed unprotected.  
-**CapabilityPort profile v0:** PR `#9` · `MERGED` · exact tested head `3990cb32f4c4426ecb31bcff0a1e4c4a439aca32` → main `cae9a645c7c50883133203c6bcc39609c313b37c`; exact-head GitHub Actions structural suite `SUCCESS`. At the 2026-09-23 audit base, the validator, tests, workflow, and profile/spec blobs still matched that tested PR #9 head; independent human review remains `NOT_CLAIMED`.
+**Repository audit checkpoint:** `2026-09-23` · current reconciliation base `main@86e1efe6cf5cb2ec0423093379608cea4bd3b933`; open PRs `0`; open Issues `#2` and `#13`; `main` remains unprotected and repository rulesets remain empty.  
+**CapabilityPort profile v0:** PR `#9` · `MERGED` · exact tested head `3990cb32f4c4426ecb31bcff0a1e4c4a439aca32`; PR `#12` hardened loss/malformed-input behavior and passed exact-head plus post-merge CI; PR `#14` made the same bounded conformance workflow run on every pull request and every push to `main`, and both its exact-head and post-merge runs succeeded. Independent human review remains `NOT_CLAIMED`.
 
 ## ✅ What exists
 
@@ -118,6 +118,7 @@ The following require separate decisions and must not be inferred from this boot
 
 - permanent Notion ↔ GitHub semantic authority / conflict-resolution model — [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2);
 - repository license — [Issue #2](https://github.com/velantrian/Mentaury-Kernel/issues/2);
+- repository-admin change control (branch protection / ruleset / required check / branch lifecycle) — [Issue #13](https://github.com/velantrian/Mentaury-Kernel/issues/13) and [`docs/GITHUB_GOVERNANCE_RUNBOOK.md`](GITHUB_GOVERNANCE_RUNBOOK.md);
 - future executable conformance formats beyond the bounded CapabilityPort profile v0 — separate Owner decision;
 - Issue #2 sections 1–2 (permanent documentation authority and license) remain OPEN;
 - concrete Port representation / serialization;
