@@ -110,30 +110,27 @@ Do not introduce without a separate explicit bounded decision:
 
 ---
 
-## 3. Current stable checkpoint — fresh audit 2026-08-16
+## 3. Current repository checkpoint — audit 2026-09-23
 
-Fresh live audit basis:
+Live GitHub audit basis before the 2026-09-23 remediation branch:
 
 | Surface | Observed state |
 |---|---|
 | Repository | `velantrian/Mentaury-Kernel` · public |
 | Default branch | `main` |
-| Audited main SHA | `2b46aedda823ae5eea55db8e43374392dc0f5dbe` |
+| Audited main SHA | `c7123349e85acab9dee9f55542b42b06c831efe8` |
 | Main signature | `VERIFIED · VALID` |
 | Open PRs at audit | `0` |
 | Open Issues at audit | `1` — Issue `#2` |
-| GitHub Actions workflows | `0` |
+| GitHub Actions workflows | `1` — CapabilityPort Conformance |
 | Branch protection on `main` | `disabled` at audit |
-| Runtime/source tree | no `src/`, runtime package, executable test suite, or implementation code present |
+| Runtime/source tree | no runtime package or production implementation; bounded `conformance/` validator and `tests/` suite present |
+| Executable profile evidence | PR `#9` exact head `3990cb32f4c4426ecb31bcff0a1e4c4a439aca32` · workflow `SUCCESS`; audited main blobs for validator/tests/workflow/spec matched that tested head |
 | AI router | `docs/AI_CONTEXT.md` |
 | Repository status surface | `docs/CURRENT_STATUS.md` |
-| Notion status | originating architecture surface remains marked `NOTION-FIRST`; permanent authority model unresolved |
+| Notion status | last repository-recorded cross-surface state remains `NOTION-FIRST`; permanent authority model unresolved in Issue `#2` |
 
-Historical bootstrap evidence retained by `docs/CURRENT_STATUS.md`:
-
-- bootstrap PR `#1` merged as `ea3b7fd33ed4aa85806ccff2b1a061360c8530af`;
-- post-merge status PR `#3` merged as current audited main `2b46aedda823ae5eea55db8e43374392dc0f5dbe`;
-- independent human review is **not claimed**.
+Historical bootstrap evidence remains preserved by `docs/CURRENT_STATUS.md`; this 2026-09-23 checkpoint supersedes the old repository-fact snapshot without changing semantic Canon. Independent human review is **not claimed**.
 
 ### Current documentation-authority boundary
 
@@ -231,25 +228,25 @@ An explicit decision is recorded and, if selected, the exact license artifact is
 
 ---
 
-### MK-FW-003 — Executable conformance format
+### MK-FW-003 — Executable conformance beyond the bounded CapabilityPort profile
 
 **FW_STATE:** `FW_DEFERRED`  
 **Priority:** `P1`  
-**Implementation authorized:** `NO`  
+**Implementation authorized:** `NO · BEYOND THE ALREADY-AUTHORIZED CAPABILITYPORT PROFILE V0`  
 **Semantic Canon change authorized:** `NO`  
 **Runtime capability change:** `NO`  
 **Owner domain:** `Mentaury-Kernel composition / Governance decision`  
 **Tracking:** GitHub Issue `#2`  
-**Last verified:** `2026-08-16`
+**Last verified:** `2026-09-23`
 
 #### Question
-Is executable conformance needed at all, and if so, what bounded format can test implementation profiles without turning a test harness into semantic authority?
+Should any executable conformance exist beyond the already implemented bounded CapabilityPort structural profile, especially for architecture-level `SC-01…SC-16`?
 
 #### Why it matters
-`SC-01…SC-16` are architecture-level observable expectations only. A test expectation can accidentally create new normative semantics if it specifies outcomes not already authorized by the architecture.
+`SC-01…SC-16` remain architecture-level observable expectations only. A broader executable suite could accidentally create new normative semantics if it specifies outcomes not already authorized by the architecture.
 
 #### Existing evidence
-`docs/CONFORMANCE_SCENARIOS.md` explicitly states:
+PR `#8` implemented the bounded profile; PR `#9` hardened its closed representation and passed exact-head CI. The validator checks only the version-bound CapabilityPort representation. `docs/CONFORMANCE_SCENARIOS.md` still states:
 
 ```text
 SCENARIO DOCUMENTED
@@ -259,19 +256,19 @@ SCENARIO DOCUMENTED
 ```
 
 #### Required audit
-Before any implementation, determine version binding, fixture representation, deterministic/non-deterministic boundaries, and what may legitimately produce binary pass/fail.
+Before any broader implementation, determine version binding, fixture representation, deterministic/non-deterministic boundaries, and what may legitimately produce binary pass/fail.
 
 #### Required experiment / reproduction
-None authorized yet.
+None authorized beyond the existing bounded profile.
 
 #### Preconditions
-Explicit architecture decision that executable conformance is necessary.
+A separate explicit architecture decision for any broader executable scope.
 
 #### Non-goals
 No runtime, no cognition tests, no identity/truth judge, no LLM-as-authority evaluator.
 
 #### Exit criteria
-Either `NO_IMPLEMENTATION` is chosen, or a bounded conformance contract is explicitly authorized before tooling is written.
+Either broader conformance remains unimplemented, or a separately bounded contract is explicitly authorized before tooling is added.
 
 #### Possible outcomes
 `FW_DONE`, `FW_DEFERRED`, `FW_NEEDS_ARCHITECTURE_DECISION`, `FW_NOT_AUTHORIZED`.
@@ -331,16 +328,16 @@ Pins are either reverified unchanged, explicitly reconciled, or marked as needin
 **Semantic Canon change authorized:** `NO`  
 **Runtime capability change:** `NO`  
 **Owner domain:** `Repository governance / documentation tooling`  
-**Last verified:** `2026-08-16`
+**Last verified:** `2026-09-23`
 
 #### Question
 Would small deterministic documentation checks materially reduce drift without becoming executable semantic conformance?
 
 #### Why it matters
-The repository currently has zero GitHub Actions workflows and no executable test suite. Earlier document audits identified value in checking stable structural facts such as status-vocabulary consistency and SC-ID alignment.
+A bounded CapabilityPort workflow now exists, but it does not detect repository-document drift such as stale checkpoints, language-map divergence, provenance coverage gaps, or research-orphaning.
 
 #### Existing evidence
-The current repository contains architecture documents only; no workflow or checker exists.
+One executable workflow exists for the CapabilityPort profile. No deterministic documentation-integrity checker currently verifies the broader repository documentation surfaces.
 
 #### Required audit
 Separate **document characterization** from **semantic conformance**. Identify checks that merely verify already-declared structure.
@@ -370,16 +367,16 @@ A decision records `NO_TOOLING`, `MORE_RESEARCH`, or a separately authorized bou
 **Semantic Canon change authorized:** `NO`  
 **Runtime capability change:** `NO`  
 **Owner domain:** `Repository Governance`  
-**Last verified:** `2026-08-16`
+**Last verified:** `2026-09-23`
 
 #### Question
 Does this specification repository need branch protection, required review/check policies, or another bounded change-control mechanism at its current stage?
 
 #### Why it matters
-At audit time `main` is unprotected and there are no required status checks. That is a repository-governance fact, not proof of a defect, but it may permit accidental bypass of the carefully documented PR discipline.
+At audit time `main` remains unprotected and no ruleset enforces the repository's PR discipline. The CapabilityPort workflow runs for matching pull requests, but direct changes to `main` can bypass that PR-time evidence.
 
 #### Existing evidence
-Fresh branch audit reports `protected=false`; repository Actions workflows are absent.
+Fresh branch audit reports `protected=false`; repository rulesets are empty; one CapabilityPort Actions workflow exists. The 2026-09-23 remediation adds a matching `push`-to-`main` verification trigger but cannot itself make the check required.
 
 #### Required audit
 Determine whether current single-owner/specification-bootstrap governance requires protection now or whether it should remain intentionally lightweight.
