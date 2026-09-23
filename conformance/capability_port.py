@@ -43,6 +43,9 @@ _FORBIDDEN_AUTHORITY_FIELDS = frozenset(
         "production_authorized",
     }
 )
+_LOSS_CLASSIFICATIONS = frozenset(
+    {"PRESERVED", "PARTIAL", "UNSUPPORTED", "INDETERMINATE", "LOSSY"}
+)
 _SEMVER = re.compile(r"^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$")
 
 
@@ -58,6 +61,8 @@ def validate_capability_port(value: object) -> ConformanceResult:
     errors: list[str] = []
     if not isinstance(value, Mapping):
         return _result(("port must be an object",))
+    if any(not isinstance(key, str) for key in value):
+        return _result(("port field names must be strings",))
 
     keys = frozenset(value)
     missing = sorted(_REQUIRED_FIELDS - keys)
@@ -122,6 +127,8 @@ def _validate_string_list(
         return
     if any(not _known_nonempty_string(entry) for entry in item):
         errors.append(f"{field} entries must be non-empty known strings")
+    elif "NONE" in item:
+        errors.append(f"{field} list must not contain reserved NONE token")
     elif len(set(item)) != len(item):
         errors.append(f"{field} entries must be unique")
 
@@ -134,6 +141,8 @@ def _validate_side_effects(value: object, errors: list[str]) -> None:
         return
     if any(not _known_nonempty_string(entry) for entry in value):
         errors.append("side_effects entries must be non-empty known strings")
+    elif "NONE" in value:
+        errors.append("side_effects list must not contain reserved NONE token")
     elif len(set(value)) != len(value):
         errors.append("side_effects entries must be unique")
 
@@ -145,8 +154,14 @@ def _validate_declared_loss(value: object, errors: list[str]) -> None:
     if frozenset(value) != {"classification", "check"}:
         errors.append("declared_loss requires exact classification and check fields")
         return
-    if not _known_nonempty_string(value.get("classification")):
+    classification = value.get("classification")
+    if not _known_nonempty_string(classification):
         errors.append("declared_loss.classification must be a non-empty known string")
+    elif classification not in _LOSS_CLASSIFICATIONS:
+        errors.append(
+            "declared_loss.classification must be one of: "
+            + ", ".join(sorted(_LOSS_CLASSIFICATIONS))
+        )
     if not _known_nonempty_string(value.get("check")):
         errors.append("declared_loss.check must be a non-empty known string")
 
