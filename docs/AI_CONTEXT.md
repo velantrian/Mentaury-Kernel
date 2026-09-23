@@ -210,6 +210,7 @@ DO NOT AUTO-SELECT NEXT MILESTONE
 8. `docs/COMPOSITION_INVARIANTS.md`
 9. `docs/THREAT_MODEL.md`
 10. `docs/CONFORMANCE_SCENARIOS.md`
+11. `docs/research/README.md` before using any research input or delta
 
 ## 🛑 Stop conditions
 
