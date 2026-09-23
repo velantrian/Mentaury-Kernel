@@ -35,7 +35,7 @@ A missing, ambiguous, unparseable, or `UNKNOWN` critical field makes the port **
 The fields that could otherwise silently widen authority have explicit minimum meaning:
 
 - `side_effects` MUST be an explicit `NONE` or an enumerated, bounded effect set;
-- `declared_loss` MUST state either an expected loss or `NONE` together with how that no-loss claim is checked;
+- `declared_loss.classification` MUST use the architecture loss vocabulary `PRESERVED / PARTIAL / UNSUPPORTED / INDETERMINATE / LOSSY`; `PRESERVED` expresses no material loss, and `declared_loss.check` states how the declaration is checked;
 - `target_admission_required` MUST be `true` for a cross-domain delivery; a transport cannot opt out of the target's gate;
 - `compatibility_constraints` MUST identify the accepted source/target contract versions or an explicit reject rule;
 - `revocation_semantics` MUST state how a previously issued capability becomes unusable, or explicitly state why no revocable authority is issued.
