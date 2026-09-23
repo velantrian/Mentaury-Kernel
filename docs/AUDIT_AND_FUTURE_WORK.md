@@ -118,14 +118,17 @@ Live GitHub audit basis before the 2026-09-23 remediation branch:
 |---|---|
 | Repository | `velantrian/Mentaury-Kernel` · public |
 | Default branch | `main` |
-| Audited main SHA | `c7123349e85acab9dee9f55542b42b06c831efe8` |
+| Audited main SHA | `86e1efe6cf5cb2ec0423093379608cea4bd3b933` |
 | Main signature | `VERIFIED · VALID` |
 | Open PRs at audit | `0` |
-| Open Issues at audit | `1` — Issue `#2` |
+| Open Issues at audit | `2` — Issues `#2`, `#13` |
 | GitHub Actions workflows | `1` — CapabilityPort Conformance |
+| Workflow routing | every pull request + every push to `main` + manual dispatch |
+| Required-check readiness | `READY` after PR `#14`; the check now exists for docs-only PRs too |
 | Branch protection on `main` | `disabled` at audit |
+| Repository rulesets | none |
 | Runtime/source tree | no runtime package or production implementation; bounded `conformance/` validator and `tests/` suite present |
-| Executable profile evidence | PR `#9` exact head `3990cb32f4c4426ecb31bcff0a1e4c4a439aca32` · workflow `SUCCESS`; audited main blobs for validator/tests/workflow/spec matched that tested head |
+| Executable profile evidence | PR `#12` exact-head + post-merge CI `SUCCESS`; PR `#14` exact-head + post-merge CI `SUCCESS` |
 | AI router | `docs/AI_CONTEXT.md` |
 | Repository status surface | `docs/CURRENT_STATUS.md` |
 | Notion status | last repository-recorded cross-surface state remains `NOTION-FIRST`; permanent authority model unresolved in Issue `#2` |
@@ -361,7 +364,7 @@ A decision records `NO_TOOLING`, `MORE_RESEARCH`, or a separately authorized bou
 
 ### MK-FW-006 — Repository change-control hardening
 
-**FW_STATE:** `FW_INVESTIGATE`  
+**FW_STATE:** `FW_BLOCKED`  
 **Priority:** `P1`  
 **Implementation authorized:** `NO`  
 **Semantic Canon change authorized:** `NO`  
@@ -373,13 +376,13 @@ A decision records `NO_TOOLING`, `MORE_RESEARCH`, or a separately authorized bou
 Does this specification repository need branch protection, required review/check policies, or another bounded change-control mechanism at its current stage?
 
 #### Why it matters
-At audit time `main` remains unprotected and no ruleset enforces the repository's PR discipline. The CapabilityPort workflow runs for matching pull requests, but direct changes to `main` can bypass that PR-time evidence.
+At audit time `main` remains unprotected and no ruleset enforces the repository's PR discipline. PR #14 removed the workflow path-filter trap: the same bounded check now runs on every pull request and every push to `main`, so the repository is ready for a required status-check rule. Direct changes to `main` can still bypass PR review until the admin setting is applied.
 
 #### Existing evidence
-Fresh branch audit reports `protected=false`; repository rulesets are empty; one CapabilityPort Actions workflow exists. The 2026-09-23 remediation adds a matching `push`-to-`main` verification trigger but cannot itself make the check required.
+Fresh branch audit reports `protected=false`; repository rulesets are empty; one CapabilityPort Actions workflow exists. PR #14 makes it unconditional for pull requests and `main` pushes. Exact-head and post-merge runs both succeeded. The remaining mutation requires GitHub repository-administration access not exposed by the connected tool surface.
 
 #### Required audit
-Determine whether current single-owner/specification-bootstrap governance requires protection now or whether it should remain intentionally lightweight.
+Apply the bounded repository policy documented in `docs/GITHUB_GOVERNANCE_RUNBOOK.md`: PR-required changes to `main`, required always-run conformance check, no force-push/delete of `main`, squash-only merge for evidence consistency, and automatic deletion of merged head branches where supported.
 
 #### Preconditions
 Explicit repository-governance decision.
@@ -388,7 +391,7 @@ Explicit repository-governance decision.
 Do not invent CI merely to satisfy a checklist. Do not require independent review unless such a policy is explicitly adopted.
 
 #### Exit criteria
-A documented decision: keep current state intentionally, or separately authorize a bounded repository-governance change.
+GitHub Settings match the bounded runbook and live verification confirms protection/ruleset enforcement plus branch lifecycle behavior.
 
 #### Possible outcomes
 `FW_DONE`, `FW_INVESTIGATE`, `FW_DEFERRED`, `FW_NEEDS_ARCHITECTURE_DECISION`.

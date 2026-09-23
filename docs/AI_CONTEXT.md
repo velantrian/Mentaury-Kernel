@@ -211,6 +211,7 @@ DO NOT AUTO-SELECT NEXT MILESTONE
 9. `docs/THREAT_MODEL.md`
 10. `docs/CONFORMANCE_SCENARIOS.md`
 11. `docs/research/README.md` before using any research input or delta
+12. `docs/GITHUB_GOVERNANCE_RUNBOOK.md` before changing repository protection, required checks, merge policy, or branch lifecycle
 
 ## 🛑 Stop conditions
 
