@@ -44,10 +44,10 @@ The primary check is against current composition invariants and scenarios, not a
 | Existing coverage | Where | Relevance to this donor candidate |
 |---|---|---|
 | CI-04 Admission Isolation | [`docs/COMPOSITION_INVARIANTS.md §4`](../COMPOSITION_INVARIANTS.md#4-admission-isolation) | delivery / structural validity / receipts remain distinct from semantic admission — a transported value is not admitted merely by crossing the boundary |
-| CI-06 Revision Accountability | [`§6`](../COMPOSITION_INVARIANTS.md#6-revision-accountability) | cross-domain transfer and restore/migration must preserve material revision lineage |
-| CI-07 Consent Propagation / Freshness | [`§7`](../COMPOSITION_INVARIANTS.md#7-consent-propagation--freshness) | copied consent/revocation state is not automatically current; receiving boundary must preserve enough state to decide whether fresh reconciliation is required (scoped to consent / relational authorization) |
+| CI-06 Revision Accountability | [`§6`](../COMPOSITION_INVARIANTS.md#6-revision-accountability) | existing rule: cross-domain transfer and restore/migration keep material revision lineage |
+| CI-07 Consent Propagation / Freshness | [`§7`](../COMPOSITION_INVARIANTS.md#7-consent-propagation--freshness) | copied consent/revocation state is not automatically current; existing rule: the receiving boundary keeps enough state to decide whether fresh reconciliation is required (scoped to consent / relational authorization) |
 | CI-08 Freshness Accountability | [`§8`](../COMPOSITION_INVARIANTS.md#8-freshness-accountability) | a semantic object, receipt or admission result is not current after a material invalidating change; freshness is not inferred from retrieval or replay |
-| CI-09 Particularity Preservation | [`§9`](../COMPOSITION_INVARIANTS.md#9-particularity-preservation) | generalization must preserve scope and provenance (scope-inflation guard) |
+| CI-09 Particularity Preservation | [`§9`](../COMPOSITION_INVARIANTS.md#9-particularity-preservation) | existing rule: generalization keeps scope and provenance (scope-inflation guard) |
 | SC-08 Replay | [`docs/CONFORMANCE_SCENARIOS.md`](../CONFORMANCE_SCENARIOS.md#sc-08--replay) | stale receipt after material change cannot establish current approval |
 | SC-14 Stale consent | [`docs/CONFORMANCE_SCENARIOS.md`](../CONFORMANCE_SCENARIOS.md#sc-14--stale-consent) | copied historical consent does not count as current consent |
 | SC-16 Scope inflation | [`docs/CONFORMANCE_SCENARIOS.md`](../CONFORMANCE_SCENARIOS.md#sc-16--scope-inflation) | generalization remains scoped, conditional, revisable, provenance-linked |
