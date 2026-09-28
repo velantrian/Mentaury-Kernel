@@ -8,7 +8,7 @@ Source: https://neoneye.github.io/agent-memory-atlas/
 
 Only cross-domain preservation consequences belong in this repository. Internal memory algorithms, retrieval engines, tombstone schemas, matching/normalization policies and storage choices do not.
 
-This is not the first Agent Memory Atlas intake in the Velantrim ecosystem: prior Atlas-related / pre-existing overlapping coverage exists in 💠 Crystal (`docs/research/MEMORY_EVAL_ADVERSARIAL_PROFILE_V0.md`, [PR #462](https://github.com/velantrian/velantrim-exocortex-crystal/pull/462)) and 🧬 Native Kernel (`docs/research/MEMORY_EVALUATION_PROTOCOL_V0.md`). This note records only the cross-domain residual after checking existing composition coverage.
+This reconciliation builds on prior Atlas-related / pre-existing overlapping coverage in 💠 Crystal (`docs/research/MEMORY_EVAL_ADVERSARIAL_PROFILE_V0.md`, [PR #462](https://github.com/velantrian/velantrim-exocortex-crystal/pull/462)) and 🧬 Native Kernel (`docs/research/MEMORY_EVALUATION_PROTOCOL_V0.md`). This note records only the cross-domain residual after checking existing composition coverage.
 
 ## Source-fidelity note
 
