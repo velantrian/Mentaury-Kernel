@@ -1,5 +1,24 @@
 # 📌 Current Status — Mentaury-Kernel
 
+> **Live reconciliation — 2026-10-01 (post-merge; status-only).** Use this block for current status; the pre-merge snapshot below is retained as history.
+>
+> - **Current `main`:** `a611ef98e96be6d21ef5d0a80d0de4288eba489d`; post-merge `Python stdlib conformance` SUCCESS, [run `36933807241`](https://github.com/velantrian/Mentaury-Kernel/actions/runs/36933807241/job/110609212473).
+> - **PR #16:** MERGED · merge SHA `46056f1e72f06451e644645361748e5258bb1fb9` · reviewed head `4a4962d84d37717111be413a6923a80080452a4e` · exact-head CI SUCCESS, run `36924318319`.
+> - **PR #17:** MERGED · merge SHA `90149f32aa2b9ab2dcd5be6255d013c0dfd41cfd` · reviewed head `6d8ab5b90905717bc054d62f43f42c1d129136ae` · exact-head CI SUCCESS, run `36924330312`.
+> - **PR #18:** MERGED · merge SHA `a611ef98e96be6d21ef5d0a80d0de4288eba489d` · reviewed head `556f5143e46b15a0489ed6f0ecd165a7bd6740a8` · exact-head CI SUCCESS, run `36924341835`.
+> - **PR #19:** OPEN / NOT MERGED. This status update does not authorize or perform its merge; the changed head requires a new bounded exact-head review.
+> - **Issues:** [#2](https://github.com/velantrian/Mentaury-Kernel/issues/2) and [#13](https://github.com/velantrian/Mentaury-Kernel/issues/13) remain OPEN. Issue #2's permanent Notion↔GitHub authority model and license remain OPEN.
+> - **Governance, read-only verification:** `main` protection is `false`; repository rulesets are empty; merge, squash, and rebase are enabled; automatic head-branch deletion is `false`. No required check is enforced by branch protection/ruleset. Issue #13 remains the open tracker; no repository settings were changed.
+> - **Limits:** CI success is not owner approval. This reconciliation adds no review/approval, settings change, branch deletion, new invariant, Canon/authority, runtime, or production authorization.
+
+> **Historical snapshot — 2026-10-01, before PR #16–#18 were merged (not current).**
+>
+> - `main@6ed5fdde2da391c6d5340440e2542e12d362189f`.
+> - PR #16 OPEN / NOT MERGED · head `4a4962d84d37717111be413a6923a80080452a4e` · exact-head CI SUCCESS, run `36924318319`.
+> - PR #17 OPEN / NOT MERGED · head `6d8ab5b90905717bc054d62f43f42c1d129136ae` · exact-head CI SUCCESS, run `36924330312`.
+> - PR #18 OPEN / NOT MERGED · head `556f5143e46b15a0489ed6f0ecd165a7bd6740a8` · exact-head CI SUCCESS, run `36924341835`.
+> - Issues #2 and #13 were OPEN; at that snapshot, main protection was absent, rulesets were empty, merge/squash/rebase were enabled, and automatic head-branch deletion was disabled.
+
 **Repository:** `velantrian/Mentaury-Kernel`  
 **Bootstrap date:** `2026-08-16`  
 **Document envelope:** `DRAFT v0.2.4 · DOCUMENT_RECONCILIATION_ONLY`  
