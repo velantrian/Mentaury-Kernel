@@ -2,7 +2,7 @@
 
 **Status:** `RESEARCH INPUT · NON-CANON · COMPOSITION RELEVANCE ONLY · NO_NEW_INVARIANT · NO_RUNTIME_CHANGE`
 
-Source: https://neoneye.github.io/agent-memory-atlas/
+Source overview: [Agent Memory Atlas](https://neoneye.github.io/agent-memory-atlas/).
 
 ## Scope ownership test
 
@@ -12,13 +12,18 @@ This reconciliation builds on prior Atlas-related / pre-existing overlapping cov
 
 ## Source-fidelity note
 
-Agent Memory Atlas's rejected-value mechanism keys a rejected value under a declared identity/normalization policy (for example scope + subject + predicate + normalized value).
+The following claim-level sources were verified at the exact revisions linked below; these are specific donor examples, not a representative benchmark or exhaustive survey.
+
+- **Universal Memory Engine:** the [Atlas analysis](https://neoneye.github.io/agent-memory-atlas/systems/universal-memory-engine/) identifies analyzed source revision [`b17c5486553634b66b3aa70777a007928dab54d7`](https://github.com/12ziyad/universal-memory-engine/commit/b17c5486553634b66b3aa70777a007928dab54d7). At that revision, [`src/pipeline/gates.js`](https://github.com/12ziyad/universal-memory-engine/blob/b17c5486553634b66b3aa70777a007928dab54d7/src/pipeline/gates.js) checks suppressions using `kind:canonicalKey(label)`; [`src/lib/db.js`](https://github.com/12ziyad/universal-memory-engine/blob/b17c5486553634b66b3aa70777a007928dab54d7/src/lib/db.js) defines `canonicalKey` via `normalizeLabel` and persists/lookups suppressions by user, kind, and canonical key; [`migrations/0003_run_32_memory_pages.sql`](https://github.com/12ziyad/universal-memory-engine/blob/b17c5486553634b66b3aa70777a007928dab54d7/migrations/0003_run_32_memory_pages.sql) defines the lookup index. This supports only the source-specific, normalized-label mechanism observed at that commit.
+- **Project Golem (contrast, not the same mechanism):** the [Atlas analysis](https://neoneye.github.io/agent-memory-atlas/systems/project-golem/) pins source revision [`210658a11bee669df875cc6edc0511fac239d1ba`](https://github.com/Arvincreator/project-golem/commit/210658a11bee669df875cc6edc0511fac239d1ba), and [`packages/memory/ExperienceMemory.js`](https://github.com/Arvincreator/project-golem/blob/210658a11bee669df875cc6edc0511fac239d1ba/packages/memory/ExperienceMemory.js) records a capped list of rejected proposal types, clears it on success, and renders it as advice. That artifact is not evidence of value-level semantic matching; the Atlas report discusses a separate memory-firewall path.
+
+The Universal Memory Engine suppression key is specifically scoped by `user_id`, `kind`, and `canonical_key` (with project scope applied by the lookup where supplied); it is not a generic `scope + subject + predicate` policy.
 
 ```text
 DECLARED NORMALIZED VALUE MATCH != ARBITRARY SEMANTIC PARAPHRASE MATCH
 ```
 
-The source does not establish general semantic-equivalence blocking. Any paraphrase-matching question is an open, owner-local policy / separate test question and is not assumed here.
+These source revisions do not establish general semantic-equivalence blocking. Any paraphrase-matching question is an open, owner-local policy / separate test question and is not assumed here. The external donor reports are research evidence only, not validation authority for Mentaury-Kernel.
 
 ## Composition-relevant candidate
 
@@ -87,4 +92,8 @@ No new invariant is created by this note. Promotion requires a concrete uncovere
 CURRENT RESULT: NO_NEW_INVARIANT
 NO_RUNTIME_CHANGE
 NO_CANON_CHANGE
+```
+
+```text
+EXTERNAL DONOR != VALIDATION AUTHORITY != CANON != RUNTIME != NEW INVARIANT
 ```
