@@ -1,5 +1,15 @@
 # 📌 Current Status — Mentaury-Kernel
 
+> **Live reconciliation — 2026-10-01 (status-only).** Dated checkpoints below are preserved as historical snapshots; use this block for currentness.
+>
+> - **Current `main`:** `6ed5fdde2da391c6d5340440e2542e12d362189f` (unchanged by this correction pass).
+> - **PR #16:** OPEN / NOT MERGED · base `main@6ed5fdde2da391c6d5340440e2542e12d362189f` · head `docs/neutrality-test-and-life-links@4a4962d84d37717111be413a6923a80080452a4e` · `Python stdlib conformance` SUCCESS, run `36924318319`.
+> - **PR #17:** OPEN / NOT MERGED · base `main@6ed5fdde2da391c6d5340440e2542e12d362189f` · head `research/agent-memory-atlas-donor-20260928@6d8ab5b90905717bc054d62f43f42c1d129136ae` · `Python stdlib conformance` SUCCESS, run `36924330312`.
+> - **PR #18:** OPEN / NOT MERGED · base `main@6ed5fdde2da391c6d5340440e2542e12d362189f` · head `docs/velantrim-agent-map-20261001@556f5143e46b15a0489ed6f0ecd165a7bd6740a8` · `Python stdlib conformance` SUCCESS, run `36924341835`.
+> - **Issues:** [#2](https://github.com/velantrian/Mentaury-Kernel/issues/2) and [#13](https://github.com/velantrian/Mentaury-Kernel/issues/13) remain OPEN. Issue #2's permanent Notion↔GitHub authority model and license remain OPEN.
+> - **Governance, read-only verification:** `main` protection is `false`; repository rulesets are empty; merge, squash, and rebase are enabled; automatic head-branch deletion is `false`. No required check is enforced by branch protection/ruleset. Issue #13 remains the open tracker; no repository settings were changed.
+> - **Reviews and limits:** no submitted reviews or inline review threads were found on PR #16/#17/#18; independent review is NOT_CLAIMED. CI success is not owner approval. No merge, approval, branch deletion, new invariant, Canon/authority, runtime, or production authorization is implied.
+
 **Repository:** `velantrian/Mentaury-Kernel`  
 **Bootstrap date:** `2026-08-16`  
 **Document envelope:** `DRAFT v0.2.4 · DOCUMENT_RECONCILIATION_ONLY`  
