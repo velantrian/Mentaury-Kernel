@@ -100,3 +100,26 @@ DOCS-ONLY RECONCILIATION ≠ RUNTIME AUTHORIZATION
 ```
 
 All existing composition invariants, authority boundaries, Notion↔GitHub governance rules, conformance limits and runtime/production ceilings remain unchanged.
+
+## 7. Cross-document synchronization
+
+The historical founder-intent source is maintained in the Mentaury Soul repository:
+
+- [Founder Vision — Life-Oriented Digital Soul](https://github.com/velantrian/velantrim-mentaury-soul/blob/main/docs/research/FOUNDER_VISION_LIFE_ORIENTED_DIGITAL_SOUL.md)
+
+The current cross-project research synthesis is maintained separately in Drive:
+
+- [Mentaury-Life](https://docs.google.com/document/d/1DoPzWOkMsE0qXzqEqGDpCn0GeJw4KNK7t8IaQaQJmJk/edit?usp=drivesdk)
+
+The relationship is additive and ordered:
+
+```text
+Founder Vision
+  = historical origin + long-horizon intent
+Mentaury-Life
+  = current founder/research synthesis across projects
+Mentaury-Kernel
+  = composition boundaries only
+```
+
+`Mentaury-Life` may interpret and connect the two research horizons, but it does not promote Founder Vision to Canon or grant Mentaury-Kernel cognition, identity or runtime authority. A link is a research reference, not an ownership transfer.
