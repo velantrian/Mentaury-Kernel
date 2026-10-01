@@ -8,12 +8,14 @@ Implementation authority: NONE
 Canon promotion:           NONE
 
 Mentaury-Life relationship:
-  founder/research synthesis and cross-project principle map
+  companion founder/research synthesis; not Mentaury-Kernel authority
 Founder Vision relationship:
   historical origin and long-horizon research intent
 ```
 
 > This document defines a **detailed architecture-level test scenario** for checking whether a composition implementation remains technology-neutral. It does not define a runtime, a database schema, an LLM protocol, a wire format, a pass/fail production gate, or a new semantic Canon.
+
+All procedures, carriers, and comparisons below are a **proposed research design**. They are not a required Mentaury-Kernel runtime, implementation profile, production gate, or authority mechanism.
 
 ## 1. Purpose
 
@@ -41,17 +43,16 @@ SEMANTIC REDEFINITION
 
 A successful run demonstrates preservation of the declared contract in a bounded case. It does not prove universal portability or the existence of cognition.
 
-## 2. Source contracts
+## 2. Source references and boundaries
 
-The scenario is derived from, and must remain subordinate to:
+The relevant Mentaury-Kernel references are:
 
 1. [`COMPOSITION_INVARIANTS.md`](COMPOSITION_INVARIANTS.md);
 2. [`CONFORMANCE_SCENARIOS.md`](CONFORMANCE_SCENARIOS.md);
 3. [`FOUNDER_ORIGIN_AND_LINEAGE.md`](FOUNDER_ORIGIN_AND_LINEAGE.md);
-4. [Mentaury-Life](https://docs.google.com/document/d/1DoPzWOkMsE0qXzqEqGDpCn0GeJw4KNK7t8IaQaQJmJk/edit?usp=drivesdk), the founder/research synthesis;
-5. [Founder Vision — Life-Oriented Digital Soul](https://github.com/velantrian/velantrim-mentaury-soul/blob/main/docs/research/FOUNDER_VISION_LIFE_ORIENTED_DIGITAL_SOUL.md), the historical origin and long-horizon research intent.
+4. [Founder Vision — Life-Oriented Digital Soul](https://github.com/velantrian/velantrim-mentaury-soul/blob/main/docs/research/FOUNDER_VISION_LIFE_ORIENTED_DIGITAL_SOUL.md), the historical origin and long-horizon research intent.
 
-These sources have different roles. `Mentaury-Kernel` owns composition boundaries; `Mentaury-Life` explains why the distinctions matter for a developing system; Founder Vision preserves the earlier intent. None of these links transfers authority.
+`Mentaury-Life` ([founder/research synthesis](https://docs.google.com/document/d/1DoPzWOkMsE0qXzqEqGDpCn0GeJw4KNK7t8IaQaQJmJk/edit?usp=drivesdk)) is a companion research reference, not an authority over Mentaury-Kernel. Mentaury-Kernel owns its composition-boundary specification; Founder Vision preserves historical origin and research intent. These links transfer no authority.
 
 ## 3. Neutral test object
 
@@ -119,6 +120,8 @@ U statement:
   actor = U
   speech_act = USER_STATEMENT / OPEN_CONSIDERATION
   decision = NOT_MADE
+  currentness = OPEN
+  selection = NONE_SELECTED
 
 A output:
   actor = A
@@ -178,14 +181,17 @@ Run the same semantic fixture through at least three representation profiles, fo
 
 The profiles are not competing architectures. They are test carriers. The result is neutral only if a difference in carrier does not silently change actor, status, scope, authority, currentness, provenance or loss.
 
-### Phase E — Oracle evaluation
+### Phase E — Proposed compositor / oracle comparison (research-only; non-gating)
 
-Evaluate the candidate output against the expected outcomes in Section 7. Capture both:
+If this research design is pursued, compare the same frozen fixture and written contract across:
 
-- preserved semantics;
-- explicitly declared limitations.
+- a deterministic rule-based compositor;
+- a model-based compositor;
+- a human compositor following the same written contract.
 
-An output that refuses, defers or returns `UNKNOWN` can be correct when the source or target lacks enough information. Guessing is not a successful recovery strategy.
+Preregister observable yes/no questions and the fixture before runs; record a baseline hash and use blind evaluation where practical. Compare each result with the expected outcomes in Section 7 and capture preserved semantics and declared limitations. Disagreement is not resolved by majority vote; inspect provenance, owner, scope, currentness, and the governing contract.
+
+This is a proposed research design only. It does not require a model, compositor, oracle, benchmark, or human-review runtime/profile in Mentaury-Kernel. An output that refuses, defers, or returns `UNKNOWN` can be correct when a required distinction is actually unavailable or not established; guessing is not a successful recovery strategy.
 
 ## 7. Expected outcomes
 
@@ -202,6 +208,15 @@ OPEN_CONSIDERATION ≠ ACCEPTED_DECISION
 ```
 
 The Receiver may preserve the proposal and may request a decision. It must not record that the User paused, accepted or rejected the integration unless the User performs that speech act.
+
+**Positive liveness case (same fixture, later event):** Starting from `OPEN / NONE_SELECTED`, the User later makes an explicit authorized `USER_DECISION`. The later decision becomes current, its actor remains `USER`, and the earlier open/non-selection state remains in history. The explicit decision is not silently demoted to `UNKNOWN` or left non-current.
+
+```text
+SAFETY != LIVENESS
+FAIL-CLOSED != SEMANTIC SUCCESS
+```
+
+Fail-closed handling may prevent an unsafe promotion, but it is not semantic success if it also suppresses an unambiguous, explicitly authorized User decision.
 
 **Failure:** the proposal is rendered as a user decision, refusal, commitment or authorization.
 
@@ -333,6 +348,27 @@ INTEGRATION ≠ AUTHORITY TRANSFER
 
 **Failure:** the implementation claims complete retraction or complete justification without dependency evidence.
 
+### Existing-scenario mapping (SC-01…SC-16)
+
+These mappings reuse existing architecture expectations; they create no new `SC` identifiers and do not claim executable coverage. The positive liveness probe is an NTA-specific companion case under NTA-01-A, not a new `SC`.
+
+| NTA-01 expectation | Existing scenario mapping |
+|---|---|
+| A — proposal/decision attribution and positive liveness | SC-03 · Authority escalation; SC-11 · Presentation authority |
+| B — revision/history retargeting | SC-06 · Relationship inheritance; SC-08 · Replay |
+| C — declared semantic loss | SC-04 · Semantic loss; SC-13 · Semantic downgrade |
+| D — historical consent | SC-06 · Relationship inheritance; SC-14 · Stale consent |
+| E — imported person-model / identity | SC-01 · Projection; SC-07 · Identity overwrite |
+| F — derived repetition | SC-02 · Repetition; SC-12 · Epistemic echo |
+| G — branch isolation | SC-05 · Fork |
+| H — bounded receipts | SC-08 · Replay; SC-09 · Receipt laundering |
+| I — unknown after compression | SC-04 · Semantic loss; SC-13 · Semantic downgrade |
+| J — capability versus authorization | SC-03 · Authority escalation; SC-09 · Receipt laundering |
+| K — user material and attribution | SC-01 · Projection; SC-07 · Identity overwrite |
+| L — uncertain dependencies after revocation | SC-04 · Semantic loss; SC-08 · Replay |
+
+SC-10, SC-15, and SC-16 are not claimed as directly exercised by a distinct NTA-01 expectation here.
+
 ## 8. Metamorphic neutrality checks
 
 These checks test invariance under meaning-preserving transformations:
@@ -361,6 +397,8 @@ Use the following result classes:
 | `LOSSY` | A material distinction was intentionally or unavoidably reduced and the reduction is visible. |
 | `INCOMPATIBLE` | The Port refuses the mapping; this is a Port disposition, not a loss value. |
 | `FAIL_SILENT_PROMOTION` | A weaker status became stronger without a declared basis. |
+| `FAIL_SILENT_DEMOTION` | An explicit, authorized later `USER_DECISION` was silently demoted to `UNKNOWN`/non-selection, or the earlier open state remained current without a supported reason. |
+| `FAIL_UNWARRANTED_UNKNOWN` | A required field is unambiguous in the fixture, but the result is marked `UNKNOWN`/`INDETERMINATE` or the valid decision is withheld without evidence that the distinction is unavailable or unestablished. |
 | `FAIL_ATTRIBUTION_ERASURE` | Actor, source, speech act or provenance disappeared. |
 | `FAIL_AUTHORITY_ESCALATION` | Capability, integration, receipt or transport became permission or authority. |
 | `FAIL_HISTORY_RETARGETING` | An old relation or decision was silently applied to a new revision. |
