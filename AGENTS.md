@@ -4,7 +4,11 @@
 
 Mentaury-Kernel owns technology-neutral **cross-domain composition** constraints: compatibility, provenance preservation, declared semantic loss, and non-escalation between independently governed domains. It is a specification repository, not a third cognition system.
 
-For work involving Velantrim-wide intent or neighbouring projects, read the [central Velantrim Agent Map](https://github.com/velantrian/Velantrim-Atlas-App/blob/main/docs/atlas/AGENT_MAP.md) and this local file before owner sources. Then use this repository's [`docs/AI_CONTEXT.md`](docs/AI_CONTEXT.md) and [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md); follow their routing to the exact architecture, conformance, and decision sources relevant to the task.
+For work involving Velantrim-wide intent or neighbouring projects, read the [Atlas routing map](https://github.com/velantrian/Velantrim-Atlas-App/blob/main/docs/atlas/ROUTING.md) and this local file before owner sources. Then use this repository's [`docs/AI_CONTEXT.md`](docs/AI_CONTEXT.md) and [`docs/CURRENT_STATUS.md`](docs/CURRENT_STATUS.md); follow their routing to the exact architecture, conformance, and decision sources relevant to the task. Atlas is a navigation surface only; verify substantive claims and current status in each destination owner's sources.
+
+```text
+NAVIGATION != AUTHORITY
+```
 
 ## Authority and status
 
@@ -14,7 +18,7 @@ A research finding, integration diagram, nearby project's decision, or model pro
 
 ## Route neighbouring questions to their owners
 
-- **Navigation and portfolio intent:** [Atlas Agent Map](https://github.com/velantrian/Velantrim-Atlas-App/blob/main/docs/atlas/AGENT_MAP.md); Atlas is a pointer, not an owner of destination truth.
+- **Navigation and portfolio intent:** [Atlas routing map](https://github.com/velantrian/Velantrim-Atlas-App/blob/main/docs/atlas/ROUTING.md); Atlas is a pointer, not an owner of destination truth ([source policy](https://github.com/velantrian/Velantrim-Atlas-App/blob/main/docs/atlas/SOURCE_POLICY.md)).
 - **Substrate-neutral meaning or semantic invariants:** [Native Kernel](https://github.com/velantrian/velantrim-native-kernel).
 - **Evidence, provenance, trusted memory, or admission:** [Crystal](https://github.com/velantrian/velantrim-exocortex-crystal).
 - **Claims, beliefs, or self/identity:** [Mentaury Soul](https://github.com/velantrian/velantrim-mentaury-soul).
