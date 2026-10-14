@@ -20,6 +20,7 @@ FUNCTIONAL LABEL != EXPERIENCE
 | [05-init-01-unresolved-initiative.md](05-init-01-unresolved-initiative.md) | INIT-01: инициатива из нерешённого, provenance-метки, аудит HLC-SELFMON-01 |
 | [06-new-levels-self-modification.md](06-new-levels-self-modification.md) | Новые уровни: самоперестройка, распределённая память, перенос навыка |
 | [07-axis-self-modification-distribution.md](07-axis-self-modification-distribution.md) | Ось самоизменения и распределённости × лестница самости |
+| [08-ecosystem-relations-status.md](08-ecosystem-relations-status.md) | Статус ECOSYSTEM_RELATIONS.md и контекст исследований 14.10.2026 |
 
 ## Источники в Notion
 
