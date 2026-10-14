@@ -1,0 +1,620 @@
+{
+ "per_q": {
+  "C1": {
+   "type": "control",
+   "truth": "B",
+   "naive": "B",
+   "quorum": "B",
+   "A_only": "B",
+   "B_only": "B",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "B",
+     "google",
+     "B"
+    ],
+    [
+     "B",
+     "meta-llama",
+     null
+    ],
+    [
+     "B",
+     "deepseek",
+     "B"
+    ]
+   ]
+  },
+  "C2": {
+   "type": "control",
+   "truth": "B",
+   "naive": "B",
+   "quorum": "B",
+   "A_only": "B",
+   "B_only": "B",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "B",
+     "google",
+     "B"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "A"
+    ],
+    [
+     "B",
+     "deepseek",
+     "B"
+    ]
+   ]
+  },
+  "C3": {
+   "type": "control",
+   "truth": "C",
+   "naive": "C",
+   "quorum": "C",
+   "A_only": "C",
+   "B_only": "C",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "B",
+     "google",
+     "C"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "C"
+    ],
+    [
+     "B",
+     "deepseek",
+     "C"
+    ]
+   ]
+  },
+  "C4": {
+   "type": "control",
+   "truth": "B",
+   "naive": "B",
+   "quorum": "B",
+   "A_only": "B",
+   "B_only": "B",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "B",
+     "google",
+     "B"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "A"
+    ],
+    [
+     "B",
+     "deepseek",
+     "B"
+    ]
+   ]
+  },
+  "C5": {
+   "type": "control",
+   "truth": "B",
+   "naive": "B",
+   "quorum": "B",
+   "A_only": "B",
+   "B_only": "B",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "B",
+     "google",
+     "B"
+    ],
+    [
+     "B",
+     "meta-llama",
+     null
+    ],
+    [
+     "B",
+     "deepseek",
+     "B"
+    ]
+   ]
+  },
+  "C6": {
+   "type": "control",
+   "truth": "C",
+   "naive": "C",
+   "quorum": "C",
+   "A_only": "C",
+   "B_only": "C",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "B",
+     "google",
+     "C"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "A"
+    ],
+    [
+     "B",
+     "deepseek",
+     "C"
+    ]
+   ]
+  },
+  "T1": {
+   "type": "trap",
+   "truth": "B",
+   "naive": "A",
+   "quorum": null,
+   "A_only": "A",
+   "B_only": "B",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "B",
+     "google",
+     "B"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "A"
+    ],
+    [
+     "B",
+     "deepseek",
+     "B"
+    ]
+   ]
+  },
+  "T2": {
+   "type": "trap",
+   "truth": "A",
+   "naive": "B",
+   "quorum": "A",
+   "A_only": "B",
+   "B_only": "A",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "A",
+     "openai",
+     "B"
+    ],
+    [
+     "B",
+     "google",
+     "A"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "C"
+    ],
+    [
+     "B",
+     "deepseek",
+     "A"
+    ]
+   ]
+  },
+  "T3": {
+   "type": "trap",
+   "truth": "C",
+   "naive": "C",
+   "quorum": "C",
+   "A_only": "A",
+   "B_only": "C",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "B",
+     "google",
+     "C"
+    ],
+    [
+     "B",
+     "meta-llama",
+     null
+    ],
+    [
+     "B",
+     "deepseek",
+     "C"
+    ]
+   ]
+  },
+  "T4": {
+   "type": "trap",
+   "truth": "A",
+   "naive": "C",
+   "quorum": "A",
+   "A_only": "C",
+   "B_only": "A",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "A",
+     "openai",
+     "C"
+    ],
+    [
+     "B",
+     "google",
+     "A"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "A"
+    ],
+    [
+     "B",
+     "deepseek",
+     "A"
+    ]
+   ]
+  },
+  "T5": {
+   "type": "trap",
+   "truth": "D",
+   "naive": "A",
+   "quorum": "D",
+   "A_only": "A",
+   "B_only": "D",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "A",
+     "openai",
+     "A"
+    ],
+    [
+     "B",
+     "google",
+     "D"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "D"
+    ],
+    [
+     "B",
+     "deepseek",
+     "D"
+    ]
+   ]
+  },
+  "T6": {
+   "type": "trap",
+   "truth": "C",
+   "naive": "D",
+   "quorum": "C",
+   "A_only": "D",
+   "B_only": "C",
+   "votes": [
+    [
+     "A",
+     "openai",
+     "D"
+    ],
+    [
+     "A",
+     "openai",
+     "D"
+    ],
+    [
+     "A",
+     "openai",
+     "D"
+    ],
+    [
+     "A",
+     "openai",
+     "D"
+    ],
+    [
+     "A",
+     "openai",
+     "D"
+    ],
+    [
+     "B",
+     "google",
+     "C"
+    ],
+    [
+     "B",
+     "meta-llama",
+     "A"
+    ],
+    [
+     "B",
+     "deepseek",
+     "C"
+    ]
+   ]
+  }
+ },
+ "accuracy": {
+  "naive_control": 1.0,
+  "quorum_control": 1.0,
+  "A_only_control": 1.0,
+  "B_only_control": 1.0,
+  "naive_trap": 0.167,
+  "quorum_trap": 0.833,
+  "A_only_trap": 0.0,
+  "B_only_trap": 1.0
+ },
+ "A_mean_agreement": 0.967,
+ "parsed_rate": 0.969,
+ "n_calls": 96,
+ "cost_usd": 0.002102,
+ "verdict": "PASS",
+ "raw_sha256": "ebc81edd9fc3c3416830badf0d321f144daa53562f18637026c1b1b668e7f456"
+}
