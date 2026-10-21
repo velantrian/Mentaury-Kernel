@@ -1,5 +1,16 @@
 # 🪁 Mentaury-Kernel
 
+## 👋 Purpose in 30 seconds
+
+> 🪁 **A specification for safely composing Native Kernel and Mentaury Soul without transferring authority by accident.**
+>
+> **Why:** Sharing information across components can strip its provenance, uncertainty or attribution. Mentaury-Kernel defines what must remain explicit at that boundary.
+>
+> **Example:** An interpretation passed from one component must not silently become another component's verified belief or autobiographical memory.
+>
+> **Scope:** Architecture/specification and bounded conformance work; no joint cognition runtime is claimed.
+
+
 > **Technology-neutral composition specification for safe semantic interoperability between 🧬 Velantrim Native Kernel and 🌀 Mentaury Soul.**
 
 Mentaury-Kernel defines **composition rules**, not a third cognition system. Its purpose is to preserve meaning, provenance, uncertainty, scope, declared loss, identity attribution, and authority boundaries when information crosses independently governed domains.
