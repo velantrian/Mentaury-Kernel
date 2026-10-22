@@ -1,5 +1,7 @@
 # 🪁 Mentaury-Kernel
 
+## 👋 Назначение за 30 секунд
+
 > 🪁 **Спецификация безопасного обмена смыслом между Native Kernel и Mentaury Soul.**
 >
 > **Зачем:** При переходе сведений между компонентами могут теряться источник, неопределённость и авторство. Mentaury-Kernel определяет, что должно оставаться явным.
@@ -140,6 +142,7 @@ docs/
 ├── COMPOSITION_INVARIANTS.md
 ├── THREAT_MODEL.md
 ├── CONFORMANCE_SCENARIOS.md
+├── NEUTRALITY_TEST_SCENARIO.md
 ├── research/README.md
 ├── research/EITI_COMPOSITION_RESEARCH_INPUT.md
 ├── research/HISTORY_PROVENANCE_BOUNDARY_REFINEMENT_2026_09_18.md
