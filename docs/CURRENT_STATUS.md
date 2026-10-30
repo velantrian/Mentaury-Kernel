@@ -1,6 +1,29 @@
 # 📌 Current Status — Mentaury-Kernel
 
-> **Live reconciliation — 2026-10-01 (post-merge; status-only).** Use this block for current status; the pre-merge snapshot below is retained as history.
+> **Live reconciliation — 2026-10-30 (status-only; supersedes the 2026-10-01 blocks below).** Use this block for current status. Times are Europe/Berlin. Verified read-only against GitHub on 2026-10-30.
+>
+> - **Current `main`:** `485ac073c7ad1ba018d071716b84e2646404ff10` (2026-10-25 23:09 CET) — docs-only research note `docs/consciousness-architecture/09-internal-cause-research-questions.md`, committed **directly to `main` without a PR** (main is unprotected; see Issue #13). No review/approval is implied by that commit.
+> - **Merged PRs since the 2026-09-23 checkpoint:**
+>
+> | PR | Title | State | Merged (Europe/Berlin) |
+> | --- | --- | --- | --- |
+> | #16 | NTA-01 neutrality test scenario and Life links | MERGED | 2026-10-02 00:10 |
+> | #17 | Agent Memory Atlas composition research input | MERGED | 2026-10-02 00:12 |
+> | #18 | Mentaury-Kernel agent routing guide | MERGED | 2026-10-02 00:14 |
+> | #19 | reconcile live repository currentness | MERGED | 2026-10-18 01:05 |
+> | #20 | consciousness-architecture research notes (non-normative) | MERGED | 2026-10-14 23:05 |
+> | #21 | human-first overview, preserve original research | MERGED | 2026-10-21 20:39 |
+>
+> - **Open PRs (both DRAFT, not merged):** [#22](https://github.com/velantrian/Mentaury-Kernel/pull/22) README.ru heading / repository-map parity (opened 2026-10-22); [#23](https://github.com/velantrian/Mentaury-Kernel/pull/23) Knowledge Perspectives composition crosswalk (opened 2026-10-28 13:43; docs-only research, `NO NEW INVARIANT · NO NEW PORT`, risks mapped to existing SC items).
+> - **Issues:** [#2](https://github.com/velantrian/Mentaury-Kernel/issues/2) and [#13](https://github.com/velantrian/Mentaury-Kernel/issues/13) remain OPEN.
+> - **Invariants / scenarios:** `docs/COMPOSITION_INVARIANTS.md` still defines the same 12 invariants; `SC-01…SC-16` unchanged. No new invariant, Port, Canon, runtime, or production authority.
+> - **Related (separate repository, cross-reference only):** Velantrim Native Kernel `main@b79695e9` after PR #202 merged 2026-10-29 (`LAB_ONLY / NOT_CANON / NOT_RUNTIME`); its PR #201 remains open.
+> - **Correction:** the 2026-10-01 block below listed PR #19 as OPEN; it was merged on 2026-10-18 together with that text, so the block was already stale at merge.
+> - **Limits:** status reconciliation only; no review/approval, settings change, branch deletion, merge, or new authority.
+
+### Historical snapshot 2026-10-01 (superseded)
+
+> **Historical — reconciliation 2026-10-01 (post-merge; status-only; superseded by the 2026-10-30 block above).** Retained as history; not current.
 >
 > - **Current `main`:** `a611ef98e96be6d21ef5d0a80d0de4288eba489d`; post-merge `Python stdlib conformance` SUCCESS, [run `36933807241`](https://github.com/velantrian/Mentaury-Kernel/actions/runs/36933807241/job/110609212473).
 > - **PR #16:** MERGED · merge SHA `46056f1e72f06451e644645361748e5258bb1fb9` · reviewed head `4a4962d84d37717111be413a6923a80080452a4e` · exact-head CI SUCCESS, run `36924318319`.
@@ -20,6 +43,8 @@
 > - Issues #2 and #13 were OPEN; at that snapshot, main protection was absent, rulesets were empty, merge/squash/rebase were enabled, and automatic head-branch deletion was disabled.
 
 **Repository:** `velantrian/Mentaury-Kernel`  
+---
+
 **Bootstrap date:** `2026-08-16`  
 **Document envelope:** `DRAFT v0.2.4 · DOCUMENT_RECONCILIATION_ONLY`  
 **Semantic architecture baseline:** `v0.2.3`  
@@ -28,7 +53,7 @@
 **External audit checkpoint:** Manus AI read-only audit at historical PR head `0028ab4e5d115220a61c96353a00b8ed4722f487` → `CHANGES_REQUIRED`; findings `F-01…F-06` were remediated before merge.  
 **Internal re-review:** `2026-08-16 · READY_TO_MERGE · NO_REMAINING_P0_P1_P2_FOUND` at pre-merge head `087501f4ca17d739ce15a0f83972097633d5444b`; owner-side/internal documentation review, **not** independent human assurance.  
 **Post-merge reconciliation:** `2026-08-16 · RECONCILED`; this status update records the already-merged bootstrap and changes no semantic law or authority.  
-**Repository audit checkpoint:** `2026-09-23` · current reconciliation base `main@86e1efe6cf5cb2ec0423093379608cea4bd3b933`; open PRs `0`; open Issues `#2` and `#13`; `main` remains unprotected and repository rulesets remain empty.  
+**Repository audit checkpoint (historical, 2026-09-23; superseded by the 2026-10-30 block above):** `2026-09-23` · reconciliation base at that time `main@86e1efe6cf5cb2ec0423093379608cea4bd3b933`; open PRs `0`; open Issues `#2` and `#13`; `main` remains unprotected and repository rulesets remain empty.  
 **CapabilityPort profile v0:** PR `#9` · `MERGED` · exact tested head `3990cb32f4c4426ecb31bcff0a1e4c4a439aca32`; PR `#12` hardened loss/malformed-input behavior and passed exact-head plus post-merge CI; PR `#14` made the same bounded conformance workflow run on every pull request and every push to `main`, and both its exact-head and post-merge runs succeeded. Independent human review remains `NOT_CLAIMED`.
 
 ## ✅ What exists
